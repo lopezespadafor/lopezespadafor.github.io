@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>López Espadafor & Asociados</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by López-Espadafor & Asociados
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- FORCE VISIBILITY: forzar header encima del hero y enlaces blancos en esta página -->
+	<style>
+	  #fh5co-header { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 999999 !important; background: transparent !important; }
+	  .fh5co-main-nav ul { display: flex !important; justify-content: center !important; gap: 12px !important; }
+	  .fh5co-main-nav ul li a { color: #fff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important; }
+	  .fh5co-hero .overlay, .fh5co-parallax .overlay { z-index: 1000 !important; }
+
+	  /* --- New rules to make the hero image reach the very top and cover the viewport --- */
+	  html, body { height: 100%; margin: 0; padding: 0; }
+
+	  /* Place the small top-row over the hero (transparent) so the background image is visible behind it */
+	  .top-row { position: absolute !important; top: 0; left: 0; right: 0; z-index: 999998 !important; background: transparent !important; }
+
+	  /* Make the hero fill the viewport and ensure the background image covers without white gaps */
+	  .fh5co-hero {
+	    min-height: 100vh !important;
+	    background-size: cover !important;
+	    background-position: center top !important;
+	    background-repeat: no-repeat !important;
+	    margin: 0 !important;
+	    padding: 0 !important;
+	  }
+
+	  /* Keep header above overlays */
+	  #fh5co-header { z-index: 1000000 !important; }
+
+	  /* Hacer el overlay del hero más claro para que la imagen quede más visible detrás del título */
+	  .fh5co-hero > .overlay {
+	    background: rgba(0,0,0,0.25) !important;
+	  }
+	  /* Asegurar que el texto del hero esté por encima del overlay y sea legible */
+	  .fh5co-hero .fh5co-intro, .fh5co-hero h1, .fh5co-hero p {
+	    color: #fff !important;
+	    z-index: 2000 !important;
+	    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+	  }
+
+	  /* User tweak: levantar la navegación en la página de inicio */
+	  /* Reduce el espacio superior para que los enlaces queden más pegados al borde superior */
+	  body.home.has-top-row #fh5co-header,
+	  body.home #fh5co-header {
+	    top: 6px !important;
+	  }
+	  body.home.has-top-row #fh5co-wrap {
+	    padding-top: 6px !important;
+	  }
+	  /* Ajustar la top-row para que ocupe menos altura y quede pegada arriba */
+	  body.home .top-row {
+	    top: 0 !important;
+	    height: 36px !important;
+	    padding-top: 4px !important;
+	  }
+	  /* Reducir padding de los enlaces en la home para que queden más altos visualmente */
+	  body.home .fh5co-main-nav ul li a {
+	    padding: 8px 10px !important;
+	    font-size: 14px !important;
+	  }
+	  body.home .top-row .top-links li a {
+	    padding: 6px 8px !important;
+	    font-size: 13px !important;
+	  }
+	  /* Asegurar que el héroe no empuje la cabecera hacia abajo */
+	  body.home .fh5co-hero { margin-top: 0 !important; padding-top: 0 !important; }
+
+	  /* ...existing code... */
+	  body.home .fh5co-hero {
+	    min-height: 100vh !important;
+	    height: 100vh !important;
+	    margin-top: 0 !important;
+	    padding-top: 0 !important;
+	    background-size: cover !important;
+	    background-position: center top !important;
+	    background-repeat: no-repeat !important;
+	    display: flex;
+	    align-items: flex-start;
+	    justify-content: center;
+	  }
+	  #fh5co-header {
+	    position: fixed !important;
+	    top: 0 !important;
+	    left: 0 !important;
+	    right: 0 !important;
+	    z-index: 1000000 !important;
+	    background: transparent !important;
+	  }
+	  .fh5co-hero > .overlay {
+	    background: rgba(0,0,0,0.25) !important;
+	    z-index: 1000 !important;
+	  }
+	  .fh5co-hero .fh5co-intro, .fh5co-hero h1, .fh5co-hero p {
+	    color: #fff !important;
+	    z-index: 2000 !important;
+	    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+	  }
+	  /* ...existing code... */
+	  html, body, #fh5co-wrap { margin: 0; padding: 0 !important; background: transparent !important; }
+	  body.home #fh5co-wrap, body.home.has-top-row #fh5co-wrap { padding-top: 0 !important; }
+	  body.home #fh5co-header, body.home .top-row { background: transparent !important; box-shadow: none !important; border: none !important; }
+	  body.home .fh5co-hero { margin-top: 0 !important; padding-top: 0 !important; }
+	  /* ...existing code... */
+	  @media screen and (max-width: 768px) {
+	    .mobile-nav-panel {
+	      top: 0 !important;
+	      left: 0 !important;
+	      right: 0 !important;
+	      bottom: auto !important;
+	      transform: none !important;
+	      min-width: 100vw;
+	      max-width: 100vw;
+	      border-radius: 0 0 14px 14px;
+	      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+	      padding: 16px 0 8px 0;
+	      align-items: center;
+	      justify-content: flex-start;
+	      animation: none !important;
+	      transition: none !important;
+	    }
+	    .mobile-nav-panel.show {
+	      display: flex !important;
+	    }
+	    .mobile-nav-panel a {
+	      font-size: 0.95rem !important;
+	    }
+	  }
+	  .mobile-nav-panel {
+	    background: #111 !important;
+	    justify-content: center !important;
+	    align-items: center !important;
+	    /* ...existing code... */
+	  }
+	  .mobile-nav-close {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100%;
+	    text-align: center;
+	    padding: 18px 0;
+	    font-size: 1.1em;
+	    color: #fff !important;
+	    background: none;
+	    border: none;
+	    cursor: pointer;
+	    font-weight: 400;
+	  }
+	  .mobile-nav-close {
+	    /* ...existing code... */
+	    background: #fff !important;
+	    color: #111 !important;
+	    border-radius: 50%;
+	    width: 44px;
+	    height: 44px;
+	    justify-content: center !important;
+	    align-items: center !important;
+	    display: flex;
+	    font-size: 1.5em;
+	    margin-left: auto;
+	    margin-right: 8px;
+	  }
+	  /* ...existing code... */
+	  .minimal-nav-btn span span {
+	    background: #fff !important;
+	  }
+	  /* ...existing code... */
+	  @media screen and (max-width: 768px) {
+	    .mobile-nav-panel a {
+	      font-size: 1.25rem !important;
+	    }
+	  }
+	</style>
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body class="home has-top-row page-index">
+
+	<!-- Top horizontal row removed to avoid duplication; navigation is in the header below -->
+
+	<div id="fh5co-wrap">
+		<header id="fh5co-header">
+		  <div class="container">
+		    <nav class="fh5co-main-nav">
+		      <!-- Botón hamburguesa solo visible en móvil -->
+		      <button class="minimal-nav-btn" id="minimalNavBtn" aria-label="Abrir menú" type="button" tabindex="0">
+		        <span style="display:inline-block;width:28px;height:28px;position:relative;">
+		          <span style="position:absolute;top:6px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+		          <span style="position:absolute;top:12px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+		          <span style="position:absolute;top:18px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+		        </span>
+		      </button>
+		      <!-- Panel de navegación móvil unificado -->
+		      <div class="mobile-nav-panel" id="mobileNavPanel" role="menu" aria-hidden="true">
+		        <a href="index.html">Inicio</a>
+		        <a href="services.html">Servicios</a>
+		        <a href="about.html">Sobre Nosotros</a>
+		        <a href="contact.html">Contacto</a>
+		        <span class="mobile-nav-close" id="mobileNavClose" tabindex="0" style="justify-content: flex-end;">&#10005;</span>
+		      </div>
+		      <div class="collapse navbar-collapse" id="navbarNav" aria-hidden="false">
+		        <ul>
+		          <li class="fh5co-active"><a href="index.html"><span>Inicio</span></a></li>
+		          <li><a href="services.html"><span>Servicios</span></a></li>
+		          <li><a href="about.html"><span>Sobre Nosotros</span></a></li>
+		          <li><a href="contact.html"><span>Contacto</span></a></li>
+		        </ul>
+		      </div>
+		    </nav>
+		  </div>
+		</header>
+
+			<div id="home" class="fh5co-hero" style="background-image: url('images/hero_1.jpg');" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell">
+							<h1>Tu asesoría digital de confianza</h1>
+							<p>Pensada para pymes, autónomos y nuevas ideas. Rigurosa, ágil y 100% adaptada a ti.</p>
+							<ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div id="services" class="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h2>Asesoramiento fiscal</h2>
+						<p>La asesoría fiscal no tiene por qué ser compleja. Apostamos por la simplicidad, el trato humano y la eficacia real. Si eres autónomo o empresa, estás en el lugar correcto.</p>
+						<p>En nuestra asesoría fiscal, integramos herramientas digitales avanzadas para que puedas gestionar tus impuestos de manera eficiente y desde cualquier lugar. La tecnología está a tu servicio para simplificar procesos y garantizar resultados óptimos.</p>
+					</div>
+					<div class="col-md-7">
+						<img src="images/DSC0114.jpg" alt="Asesoría López-Espadafor" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div id="about" class="fh5co-parallax" style="background-image: url(images/z%20mirador%20ch%20v.JPG);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell">
+							<h1 class="text-center">Confianza fiscal. Resultados reales.</h1>
+							<p>López-Espadafor & Asociados, especialistas en fiscalidad para autónomos, pymes y particulares.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fh5co-section">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<h2>Hecho con visión</h2>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<p>El nuevo asesor debe ser ágil, técnico y humano. Por eso decidí crear una asesoría moderna, donde el cliente entiende lo que paga, sabe lo que necesita y obtiene una respuesta rápida, precisa y adaptada a la realidad actual. Porque el futuro del asesoramiento no está en las palabras, sino en las soluciones.</p>
+					</div>
+					<div class="col-md-6">
+						<p>Nació con una idea clara: cambiar la forma en que los emprendedores reciben asesoramiento. Ya no más trámites eternos ni tecnicismos vacíos. Solo claridad, eficiencia y compromiso real con cada cliente. Así empieza el camino de López-Espadafor & Asociados.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div> <!-- END fh5co-wrap -->
+
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Sobre Nosotros</h3>
+					<p>En López-Espadafor & Asociados somos un equipo dinámico que fusiona tecnología y cercanía para ofrecer soluciones fiscales claras, eficientes y hechas a tu medida.</p>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h3>Enlaces Rápidos</h3>
+					<ul>
+						<li><a href="about.html">Sobre Nosotros</a></li>
+						<li><a href="#">Productos</a></li>
+						<li><a href="services.html">Servicios</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="contact.html">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h3>Síguenos</h3>
+					<ul class="fh5co-social">
+						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/carlos-l%C3%B3pez-espadafor-fern%C3%A1ndez-a351b0265/"><i class="icon-linkedin"></i> <span>LinkedIn</span></a></li>
+						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
+						<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+					<div class="col-md-12 fh5co-copyright text-center">
+					<p><small>&copy; 2025 López-Espadafor & Asociados. Todos los derechos reservados. Diseño adaptado con precisión fiscal.</small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Mobile nav script: toggle minimal top-right panel -->
+	<script>
+	(function(){
+	  var btn = document.getElementById('minimalNavBtn');
+	  var panel = document.getElementById('mobileNavPanel');
+	  var closeBtn = document.getElementById('mobileNavClose');
+	  var links = panel.querySelectorAll('a');
+
+	  if(!btn || !panel) return;
+
+	  function setState(show){
+	    if(show){
+	      panel.classList.add('show');
+	      panel.setAttribute('aria-hidden','false');
+	      btn.setAttribute('aria-expanded','true');
+	    } else {
+	      panel.classList.remove('show');
+	      panel.setAttribute('aria-hidden','true');
+	      btn.setAttribute('aria-expanded','false');
+	    }
+	  }
+
+	  btn.addEventListener('click', function(e){
+	    e.stopPropagation();
+	    setState(!panel.classList.contains('show'));
+	  });
+	  closeBtn && closeBtn.addEventListener('click', function(e){ e.stopPropagation(); setState(false); });
+	  links.forEach(function(link){ link.addEventListener('click', function(){ setState(false); }); });
+	  document.addEventListener('click', function(e){
+	    if(panel.classList.contains('show') && !panel.contains(e.target) && e.target !== btn){
+	      setState(false);
+	    }
+	  }, true);
+	  panel.addEventListener('click', function(e){ e.stopPropagation(); });
+	})();
+	</script>
+
+	</body>
+</html>
+

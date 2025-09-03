@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>López Espadafor & Asociados</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- FORCE VISIBILITY: forzar header encima del hero y enlaces blancos en esta página -->
+	<style>
+	  #fh5co-header { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 999999 !important; background: transparent !important; }
+	  .fh5co-main-nav ul { display: flex !important; justify-content: center !important; gap: 12px !important; }
+	  .fh5co-main-nav ul li a { color: #fff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important; }
+	  .fh5co-hero .overlay, .fh5co-parallax .overlay { z-index: 1000 !important; }
+
+	  /* --- New rules to make the hero image reach the very top and cover the viewport --- */
+	  html, body { height: 100%; margin: 0; padding: 0; }
+
+	  /* Place the small top-row over the hero (transparent) so the background image is visible behind it */
+	  .top-row { position: absolute !important; top: 0; left: 0; right: 0; z-index: 999998 !important; background: transparent !important; }
+
+	  /* Make the hero fill the viewport and ensure the background image covers without white gaps */
+	  .fh5co-hero {
+	    min-height: 100vh !important;
+	    background-size: cover !important;
+	    background-position: center top !important;
+	    background-repeat: no-repeat !important;
+	    margin: 0 !important;
+	    padding: 0 !important;
+	  }
+
+	  /* Keep header above overlays */
+	  #fh5co-header { z-index: 1000000 !important; }
+
+	  /* Hacer el overlay del hero más claro para que la imagen quede más visible detrás del título */
+	  .fh5co-hero > .overlay {
+	    background: rgba(0,0,0,0.25) !important;
+	  }
+	  /* Asegurar que el texto del hero esté por encima del overlay y sea legible */
+	  .fh5co-hero .fh5co-intro, .fh5co-hero h1, .fh5co-hero p {
+	    color: #fff !important;
+	    z-index: 2000 !important;
+	    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+	  }
+	  .fh5co-main-nav ul {
+	    font-family: 'Work Sans', Arial, sans-serif;
+	    font-weight: 300;
+	    font-size: 2.1rem;
+	    letter-spacing: 2px;
+	    color: #fff;
+	    gap: 36px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0;
+	    padding: 0;
+	    list-style: none;
+	  }
+	  .fh5co-main-nav ul li a {
+	    position: relative;
+	    color: #fff !important;
+	    background: none;
+	    border: none;
+	    font-weight: 300;
+	    font-size: 2.1rem;
+	    letter-spacing: 2px;
+	    padding: 8px 0;
+	    text-decoration: none;
+	    transition: color 0.18s, border-bottom 0.18s;
+	    border-bottom: 2px solid transparent;
+	    display: inline-block;
+	  }
+	  .fh5co-main-nav ul li a:hover,
+	  .fh5co-main-nav ul li.fh5co-active a {
+	    color: #fff;
+	    border-bottom: 2px solid #fff;
+	  }
+	  .fh5co-main-nav ul li a::after {
+	    content: "";
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    height: 0; /* Elimina el subrayado inferior extra */
+	    background: transparent;
+	    transform: scaleX(0);
+	    transition: transform 0.18s;
+	  }
+	  .fh5co-main-nav ul li a:hover::after,
+	  .fh5co-main-nav ul li.fh5co-active a::after {
+	    transform: scaleX(1);
+	  }
+	  .fh5co-main-nav ul li a:active {
+	    color: #52d3aa;
+	  }
+	  @media screen and (max-width: 768px) {
+	    .minimal-nav-btn {
+	      display: flex !important;
+	      position: fixed !important;
+	      top: 16px !important;
+	      right: 18px !important;
+	      z-index: 2500 !important;
+	      width: 44px;
+	      height: 44px;
+	      border-radius: 50%;
+	      background: rgba(0,0,0,0.85);
+	      color: #fff;
+	      border: none;
+	      align-items: center;
+	      justify-content: center;
+	      font-size: 28px;
+	      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+	      cursor: pointer;
+	      transition: background 160ms, transform 140ms;
+	    }
+	    .minimal-nav-btn span span {
+	      background: #fff !important;
+	    }
+	    .mobile-nav-panel {
+	      display: none;
+	      position: fixed !important;
+	      top: 0 !important;
+	      left: 0 !important;
+	      right: 0 !important;
+	      bottom: auto !important;
+	      transform: none !important;
+	      min-width: 100vw;
+	      max-width: 100vw;
+	      border-radius: 0 0 14px 14px;
+	      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+	      padding: 16px 0 8px 0;
+	      align-items: center;
+	      justify-content: flex-start;
+	      animation: none !important;
+	      transition: none !important;
+	      background: #111 !important;
+	      justify-content: center !important;
+	      align-items: center !important;
+	    }
+	    .mobile-nav-panel.show {
+	      display: flex !important;
+	    }
+	    .mobile-nav-panel a {
+	      color: #222 !important;
+	      font-size: 1.2rem !important;
+	      font-weight: 400;
+	      font-family: 'Work Sans', Arial, sans-serif;
+	      text-shadow: none !important;
+	      text-align: center;
+	      text-decoration: none;
+	      padding: 18px 0;
+	      width: 100%;
+	      border-bottom: 1px solid #eee;
+	      background: none;
+	      margin: 0;
+	      transition: none !important;
+	      letter-spacing: 0.5px;
+	    }
+	    .mobile-nav-panel a:last-child {
+	      border-bottom: none;
+	    }
+	    .mobile-nav-panel a:hover {
+	      background: #f5f5f5;
+	    }
+	    .mobile-nav-close {
+	      display: flex;
+	      justify-content: center;
+	      align-items: center;
+	      width: 100%;
+	      text-align: center;
+	      padding: 18px 0;
+	      font-size: 1.1em;
+	      color: #fff !important;
+	      background: none;
+	      border: none;
+	      cursor: pointer;
+	      font-weight: 400;
+	    }
+	    .mobile-nav-close {
+	      background: #fff !important;
+	      color: #111 !important;
+	      border-radius: 50%;
+	      width: 44px;
+	      height: 44px;
+	      justify-content: center !important;
+	      align-items: center !important;
+	      display: flex;
+	      font-size: 1.5em;
+	      margin-left: auto;
+	      margin-right: 8px;
+	    }
+	    @keyframes fadeInPanel {
+	      from { opacity: 0; transform: translateY(24px); }
+	      to { opacity: 1; transform: translateY(0); }
+	    }
+
+	    /* NEW: ensure both mobility paragraphs have the same horizontal margin on mobile and remove extra top spacing */
+	    .fh5co-section .col-md-6 {
+	      padding-left: 32px !important;
+	      padding-right: 32px !important;
+	      margin-top: 0 !important; /* override inline margin-top on second column */
+	    }
+	    .fh5co-section .col-md-6 p {
+	      margin-left: 0 !important;
+	      margin-right: 0 !important;
+	    }
+	    /* In case an inline style sets margin-top on the right column, force it to 0 on small screens */
+	    .fh5co-section .col-md-6[style*="margin-top"] {
+	      margin-top: 0 !important;
+	    }
+	  }
+	  @media screen and (min-width: 769px) {
+	    .minimal-nav-btn, .mobile-nav-panel { display: none !important; }
+	  }
+	  @media (max-width: 768px) {
+	    .mobile-nav-panel a.nav-link-blue {
+	      color: #153a5b !important;
+	      font-weight: 600;
+	      font-size: 1.2em;
+	      letter-spacing: 0.5px;
+	      text-shadow: none !important;
+	      transition: color 0.18s;
+	    }
+	    .mobile-nav-panel a.nav-link-blue:hover {
+	      color: #1d4e89 !important;
+	      background: #f5f8fa;
+	    }
+	  }
+	  .language-selector {
+	    position: fixed;
+	    top: 16px;
+	    left: 16px;
+	    z-index: 1000002;
+	    display: flex;
+	    gap: 8px;
+	    background: rgba(255,255,255,0.12);
+	    border-radius: 18px;
+	    padding: 4px 8px;
+	    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	    transition: background 0.2s;
+	  }
+	  .language-selector .lang-btn {
+	    background: none;
+	    border: none;
+	    font-size: 1.6em;
+	    cursor: pointer;
+	    padding: 2px 4px;
+	    border-radius: 50%;
+	    transition: background 0.2s;
+	  }
+	  .language-selector .lang-btn.selected {
+	    background: #fff;
+	    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+	  }
+	  @media screen and (max-width: 768px) {
+	    .language-selector {
+	      position: fixed;
+	      top: auto;
+	      bottom: 16px;
+	      left: 50%;
+	      transform: translateX(-50%);
+	      background: rgba(0,0,0,0.85);
+	      padding: 6px 12px;
+	      border-radius: 22px;
+	      box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+	      gap: 12px;
+	    }
+	    .language-selector .lang-btn {
+	      font-size: 2em;
+	      color: #fff;
+	      background: none;
+	    }
+	    .language-selector .lang-btn.selected {
+	      background: #fff;
+	      color: #222;
+	    }
+	  }
+	  /* Ensure white underline appears on hover for main nav links (desktop and mobile) */
+	  .fh5co-main-nav ul li a {
+	    position: relative;
+	    border-bottom: none !important;
+	    padding-bottom: 0; /* reduce padding so underline sits closer to the text */
+	  }
+	  /* Use the inner <span> for the desktop underline (same approach as other pages) */
+	  .fh5co-main-nav ul li a span {
+	    display: inline-block;
+	    padding-bottom: 3px; /* small gap between text and underline */
+	    border-bottom: 2px solid transparent !important; /* force override */
+	    transition: border-color 0.18s ease, padding-bottom 0.12s ease;
+	  }
+	  .fh5co-main-nav ul li a:hover span,
+	  .fh5co-main-nav ul li.fh5co-active a span {
+	    border-bottom-color: #fff !important; /* force visible underline */
+	  }
+	  /* Mobile panel: adjust underline to sit closer as well (mobile links don't use <span>) */
+	  .mobile-nav-panel a {
+	    position: relative;
+	    padding-bottom: 6px; /* keep some tappable area but bring the visual underline closer */
+	  }
+	  .mobile-nav-panel a::after {
+	    content: "";
+	    position: absolute;
+	    left: 8%;
+	    right: 8%;
+	    bottom: 4px; /* closer to the text */
+	    height: 2px;
+	    background: #fff;
+	    transform: scaleX(0);
+	    transform-origin: left center;
+	    transition: transform 0.18s ease, background-color 0.18s ease;
+	  }
+	  .mobile-nav-panel a:hover::after,
+	  .mobile-nav-panel a:focus::after {
+	    transform: scaleX(1);
+	  }
+
+	  /* --- Responsive fixes for iPhone / small screens --- */
+	  @media only screen and (max-width: 768px) {
+	    /* iOS Safari often ignores background-attachment:fixed and causes visual issues — force scroll */
+	    .fh5co-hero {
+	      background-attachment: scroll !important;
+	      min-height: 60vh !important; /* reduce extreme height on phones */
+	      height: auto !important;
+	      background-position: center center !important;
+	    }
+
+	    /* Add safe-area padding so content won't be hidden under the notch/status bar */
+	    .fh5co-hero .container {
+	      padding-top: calc(env(safe-area-inset-top, 20px) + 22px);
+	      padding-bottom: 22px;
+	    }
+
+	    /* Ensure inline <img> images are fully fluid and don't overflow the viewport */
+	    .fh5co-section .col-md-7 img,
+	    .fh5co-staff img,
+	    img.img-responsive,
+	    .fh5co-section img.align-top {
+	      width: 100% !important;
+	      max-width: 100% !important;
+	      height: auto !important;
+	      display: block !important;
+	      object-fit: cover; /* crop nicely if container forces height */
+	    }
+
+	    /* In case hero/parallax backgrounds are very tall, ensure they still cover without gaps */
+	    .fh5co-hero, .fh5co-parallax {
+	      background-size: cover !important;
+	      background-repeat: no-repeat !important;
+	    }
+	  }
+
+	  @media screen and (min-width: 769px) {
+	    .minimal-nav-btn, .mobile-nav-panel { display: none !important; }
+	  }
+	</style>
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body class="has-top-row hero-over page-about">
+	<div class="language-selector" id="languageSelector">
+	  <button class="lang-btn" data-lang="es" aria-label="Español">🇪🇸</button>
+	  <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+	  <button class="lang-btn" data-lang="zh" aria-label="Chinese">🇨🇳</button>
+	  <button class="lang-btn" data-lang="ar" aria-label="Arabic">🇸🇦</button>
+	</div>
+	<!-- Top horizontal row visible on every page -->
+	<div class="top-row">
+	  <div class="container">
+		<ul class="top-links">
+		  <!-- Enlaces eliminados según solicitud -->
+		</ul>
+	  </div>
+	</div>
+
+	<div id="fh5co-wrap">
+		<header id="fh5co-header">
+			<div class="container">
+				<nav class="fh5co-main-nav">
+					<!-- Botón hamburguesa solo visible en móvil -->
+					<button class="minimal-nav-btn" id="minimalNavBtn" aria-label="Abrir menú" type="button" tabindex="0">
+						<span style="display:inline-block;width:28px;height:28px;position:relative;">
+							<span style="position:absolute;top:6px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+							<span style="position:absolute;top:12px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+							<span style="position:absolute;top:18px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+						</span>
+					</button>
+					<!-- Panel de navegación móvil ordenado: Inicio, Servicios, Sobre Nosotros, Contacto -->
+					<div class="mobile-nav-panel" id="mobileNavPanel" role="menu" aria-hidden="true">
+					  <a href="index.html" class="nav-link-blue" data-i18n="nav_home">Inicio</a>
+					  <a href="services.html" class="nav-link-blue" data-i18n="nav_services">Servicios</a>
+					  <a href="about.html" class="nav-link-blue" data-i18n="nav_about">Sobre Nosotros</a>
+					  <a href="contact.html" class="nav-link-blue" data-i18n="nav_contact">Contacto</a>
+					  <span class="mobile-nav-close" id="mobileNavClose" tabindex="0" style="justify-content: flex-end;">&#10005;</span>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarNav" aria-hidden="false">
+						<ul>
+							 <li><a href="index.html" data-i18n="nav_home"><span>Inicio</span></a></li>
+							 <li><a href="services.html" data-i18n="nav_services"><span>Servicios</span></a></li>
+							 <li class="fh5co-active"><a href="about.html" data-i18n="nav_about"><span>Sobre Nosotros</span></a></li>
+							 <li><a href="contact.html" data-i18n="nav_contact"><span>Contacto</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="fh5co-hero" style="background-image: url('images/ec42c4f6f66b672f0293421509f94fe8.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100vh; background-attachment: fixed;">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell">
+							<h1 class="text-center" data-i18n="about_title">Sobre Nosotros</h1>
+							<p data-i18n="about_subtitle">En López-Espadafor & Asociados somos un equipo dinámico que fusiona tecnología y cercanía para ofrecer soluciones fiscales claras, eficientes y hechas a tu medida.</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5">
+							<h2 data-i18n="about.history_title">Nuestra Historia</h2>
+							
+							<p data-i18n="about.history.0"></p>
+							<p data-i18n="about.history.1"></p>
+							
+						</div>
+						<div class="col-md-7">
+							<img src="images/7dc5405977dc4a13914439ed33df59731.jpg" alt="Nuestra Historia" class="img-responsive align-top">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fh5co-parallax" style="background-image: url(images/f875bcca2f7c1471011160f4c749154d.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+							<div class="fh5co-intro fh5co-table-cell">
+								<h1 class="text-center" data-i18n="about.news_title">Novedades y Contenidos Clave</h1>
+								<p data-i18n="about.news_body">Mantente informado y sácale partido a cada actualización para llevar tu gestión fiscal al siguiente nivel.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fh5co-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 fh5co-staff">
+							<img src="images/b45bde631f4053f7df73aa7b8644cb1f.jpg" alt="Guía de Incentivos y Subvenciones para Pymes" class="img-responsive align-top">
+							<h3 data-i18n="about.staff.0.title">Guía de Incentivos y Subvenciones para Pymes</h3>
+							<h4></h4>
+							<p data-i18n="about.staff.0.body">Recopilamos las ayudas fiscales y subvenciones disponibles este año, con criterios de elegibilidad, plazos de solicitud y ejemplos de éxito. No pierdas la oportunidad de reducir tu carga impositiva.</p>
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-google"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 fh5co-staff">
+							<img src="images/8b14ee6be07849d400e5cd9a7c4cf15a.jpg" alt="Planificación Fiscal para Startups" class="img-responsive align-top">
+							<h3 data-i18n="about.staff.1.title">Planificación Fiscal para Startups</h3>
+							<h4></h4>
+							<p data-i18n="about.staff.1.body">Te mostramos las mejores estrategias fiscales desde la constitución de tu empresa hasta la fase de crecimiento. Incluye ejemplos de estructuras societarias, deducciones iniciales y claves para atraer inversores sin sorpresas tributarias.</p>
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-google"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 fh5co-staff">
+							<img src="images/ca27727d8f805bb10ba67abf8f2299bd-modified.jpg" alt="Declaración de la Renta 2025: Errores Comunes y Cómo Evitarlos" class="img-responsive align-top">
+							<h3 data-i18n="about.staff.2.title">Declaración de la Renta 2025: Errores Comunes y Cómo Evitarlos</h3>
+							<h4></h4>
+							<p data-i18n="about.staff.2.body">Analizamos los fallos más frecuentes al presentar la Renta, desde deducciones mal aplicadas hasta omisiones habituales. Con nuestras recomendaciones podrás presentar tu declaración con confianza y maximizar tus devoluciones.</p>
+							<ul class="fh5co-social">
+								<li><a href="#"><i class="icon-google"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="fh5co-parallax" style="background-image: url(images/ea66610bbe1548dd8f884afee68199bb.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+							<div class="fh5co-intro fh5co-table-cell">
+								<h1 class="text-center" data-i18n="about.mobility_title">Movilidad Patrimonial Internacional</h1>
+								<p class="text-center" data-i18n="about.mobility_body">Gestión integral, cumplimiento normativo y protección de activos en distintos territorios, garantizada por López-Espadafor & Asociados.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fh5co-section">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6" style="padding-left: 32px;">
+									<h2 data-i18n="about.mobility_section_heading">Impulsa Hoy la Movilidad de tu Patrimonio</h2>
+									<p data-i18n="about.mobility_paragraph1">En López-Espadafor & Asociados diseñamos estrategias a medida para trasladar y proteger tus activos entre jurisdicciones con total seguridad. Nuestro enfoque combina experiencia legal y fiscal con soluciones digitales que garantizan el cumplimiento normativo local e internacional en cada paso.</p>
+								</div>
+								<div class="col-md-6" style="margin-top: 88px;">
+									<p data-i18n="about.mobility_paragraph2">Gracias a alianzas con corresponsales en Europa, América y Asia, gestionamos toda la operativa de transferencias, estructuras societarias y trusts, minimizando riesgos y costes. Nuestro equipo te asesora sobre convenios de doble imposición, requisitos de reporting y planificación sucesoria, para que tu patrimonio siempre esté en las mejores manos.</p>
+									<p><a href="contact.html" class="btn btn-primary" data-i18n="about.mobility_cta">Comienza ahora</a></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+	</div> <!-- END fh5co-wrap -->
+
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3>Sobre Nosotros</h3>
+					<p>López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control. López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control.</p>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h3 data-i18n="quick_links.title">Enlaces Rápidos</h3>
+					<ul>
+						<li><a href="about.html" data-i18n="quick_links.about">Sobre Nosotros</a></li>
+						<li><a href="#" data-i18n="quick_links.products">Productos</a></li>
+						<li><a href="services.html" data-i18n="quick_links.services">Servicios</a></li>
+						<li><a href="#" data-i18n="quick_links.blog">Blog</a></li>
+						<li><a href="contact.html" data-i18n="quick_links.contact">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h3 data-i18n="follow_us.title">Síguenos</h3>
+					<ul class="fh5co-social">
+						<li><a href="#"><i class="icon-twitter"></i> <span data-i18n="follow_us.twitter">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/carlos-l%C3%B3pez-espadafor-fern%C3%A1ndez-a351b0265/"><i class="icon-linkedin"></i> <span data-i18n="follow_us.linkedin">LinkedIn</span></a></li>
+						<li><a href="#"><i class="icon-instagram"></i> <span data-i18n="follow_us.instagram">Instagram</span></a></li>
+						<li><a href="#"><i class="icon-google"></i> <span data-i18n="follow_us.googleplus">Google Plus</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 fh5co-copyright text-center">
+					<p data-i18n="footer_rights" data-i18n-html="true"><small>&copy; 2025 López-Espadafor & Asociados. Todos los derechos reservados. Diseño adaptado con precisión fiscal.</small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<script>
+	(function(){
+	  var btn = document.getElementById('minimalNavBtn');
+	  var panel = document.getElementById('mobileNavPanel');
+	  var closeBtn = document.getElementById('mobileNavClose');
+	  var links = panel.querySelectorAll('a');
+
+	  if(!btn || !panel) return;
+
+	  function setState(show){
+	    if(show){
+	      panel.classList.add('show');
+	      panel.setAttribute('aria-hidden','false');
+	      btn.setAttribute('aria-expanded','true');
+	    } else {
+	      panel.classList.remove('show');
+	      panel.setAttribute('aria-hidden','true');
+	      btn.setAttribute('aria-expanded','false');
+	    }
+	  }
+
+	  btn.addEventListener('click', function(e){
+	    e.stopPropagation();
+	    setState(!panel.classList.contains('show'));
+	  });
+	  closeBtn && closeBtn.addEventListener('click', function(e){ e.stopPropagation(); setState(false); });
+	  links.forEach(function(link){ link.addEventListener('click', function(){ setState(false); }); });
+	  document.addEventListener('click', function(e){
+	    if(panel.classList.contains('show') && !panel.contains(e.target) && e.target !== btn){
+	      setState(false);
+	    }
+	  }, true);
+	  panel.addEventListener('click', function(e){ e.stopPropagation(); });
+	})();
+	(function(){
+	  var selector = document.getElementById('languageSelector');
+	  var btns = selector ? selector.querySelectorAll('.lang-btn') : [];
+	  var LANG_KEY = 'site_lang';
+	  var defaultLang = 'es';
+
+	  function setLang(lang) {
+	    localStorage.setItem(LANG_KEY, lang);
+	    btns.forEach(function(btn){
+	      btn.classList.toggle('selected', btn.dataset.lang === lang);
+	    });
+	    // Aquí podrías cargar traducciones dinámicas si las tienes
+	  }
+
+	  btns.forEach(function(btn){
+	    btn.addEventListener('click', function(e){
+	      setLang(btn.dataset.lang);
+	    });
+	  });
+
+	  var savedLang = localStorage.getItem(LANG_KEY) || defaultLang;
+	  setLang(savedLang);
+	})();
+	// Traducción dinámica multi-idioma
+	(function(){
+	  var LANG_KEY = 'site_lang';
+	  var defaultLang = 'es';
+	  var selector = document.getElementById('languageSelector');
+	  var btns = selector ? selector.querySelectorAll('.lang-btn') : [];
+	  var currentLang = localStorage.getItem(LANG_KEY) || defaultLang;
+	  function setLang(lang) {
+	    localStorage.setItem(LANG_KEY, lang);
+	    btns.forEach(function(btn){
+	      btn.classList.toggle('selected', btn.dataset.lang === lang);
+	    });
+	    loadLang(lang);
+	  }
+	  btns.forEach(function(btn){
+	    btn.addEventListener('click', function(){
+	      setLang(btn.dataset.lang);
+	    });
+	  });
+	  function loadLang(lang) {
+	    fetch(lang + '.json')
+	      .then(function(r){ return r.json(); })
+	      .then(function(t){
+	        // Specific older assignments (kept for backwards compatibility)
+	        // Update nav labels for desktop and mobile independently. This handles
+	        // anchors that contain child <span> elements (keeps existing markup).
+	        (function(){
+	          var desktopNav = document.querySelectorAll('.fh5co-main-nav ul li a');
+	          var mobileNav = document.querySelectorAll('.mobile-nav-panel a');
+	          var keys = ['nav_home','nav_services','nav_about','nav_contact'];
+	          function applyList(list){
+	            list.forEach(function(el, i){
+	              var key = keys[i];
+	              if(!key) return;
+	              var value = t && t[key];
+	              if(!value) return;
+	              var span = el.querySelector('span');
+	              if(span) span.textContent = value;
+	              else el.textContent = value;
+	            });
+	          }
+	          applyList(desktopNav);
+	          applyList(mobileNav);
+	        })();
+	        // Generic data-i18n mapping: supports nested keys and array indices like "about.staff.0.title"
+	        function getValue(obj, path) {
+	          try {
+	            return path.split('.').reduce(function(acc, part) {
+	              if(acc === undefined || acc === null) return undefined;
+	              // handle array index
+	              var m = part.match(/^(\w+)\[(\d+)\]$/);
+	              if(m) {
+	                return acc[m[1]] ? acc[m[1]][parseInt(m[2],10)] : undefined;
+	              }
+	              // handle numeric index like 0
+	              if(/^[0-9]+$/.test(part)) {
+	                return acc[parseInt(part,10)];
+	              }
+	              return acc[part];
+	            }, obj);
+	          } catch(e) { return undefined; }
+	        }
+	        document.querySelectorAll('[data-i18n]').forEach(function(el){
+	          var path = el.getAttribute('data-i18n');
+	          var val = getValue(t, path);
+	          if(val !== undefined) {
+	            if(el.hasAttribute('data-i18n-html')) {
+	              el.innerHTML = val;
+	            } else {
+	              el.textContent = val;
+	            }
+	          }
+	        });
+	      });
+	  }
+	  setLang(currentLang);
+	})();
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+	<script type="module">
+	  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	  createChat({
+	    webhookUrl: 'https://lopezespadafor.app.n8n.cloud/webhook/66e107fa-4f85-4cbe-bf75-f6b116979cac/chat',
+	    defaultLanguage: 'es',
+	    i18n: {
+	      es: {
+	        title: '¡Hola! 👋',
+	        subtitle: 'Inicia un chat. Estamos aquí para ayudarte las 24 horas, los 7 días de la semana.',
+	        footer: '',
+	        getStarted: 'Nueva conversación',
+	        inputPlaceholder: 'Escribe tu pregunta...'
+	      }
+	    },
+	    initialMessages: [
+	      '¡Hola! 👋',
+	      'Mi nombre es Carlos. ¿En qué puedo ayudarte hoy?'
+	    ]
+	  });
+	</script>
+
+	</body>
+</html>
+

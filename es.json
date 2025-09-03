@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "title": "López Espadafor & Asociados",
+    "description": "Asesoría fiscal moderna para autónomos, pymes y particulares. Tecnología, claridad y trato cercano."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "nav_home": "Inicio",
+  "nav_services": "Servicios",
+  "nav_about": "Sobre Nosotros",
+  "nav_contact": "Contacto",
+  "home": {
+    "title": "Tu asesoría digital de confianza",
+    "subtitle": "Pensada para pymes, autónomos y nuevas ideas. Rigurosa, ágil y 100% adaptada a ti."
+  },
+  "home_title": "Tu asesoría digital de confianza",
+  "home_subtitle": "Pensada para pymes, autónomos y nuevas ideas. Rigurosa, ágil y 100% adaptada a ti.",
+  "index": {
+    "hero_title": "Confianza fiscal.\nResultados reales.",
+    "hero_title_line1": "Confianza fiscal.",
+    "hero_title_line2": "Resultados reales.",
+    "hero_subtitle": "López-Espadafor & Asociados, especialistas en fiscalidad para\nautónomos, pymes y particulares.",
+    "hero_cta": "",
+    "fiscal_advice_title": "Asesoramiento fiscal",
+    "fiscal_advice_body1": "La asesoría fiscal no tiene por qué ser compleja. Apostamos por la simplicidad, el trato humano y la eficacia real. Si eres autónomo o empresa, estás en el lugar correcto.",
+    "fiscal_advice_body2": "En nuestra asesoría fiscal, integramos herramientas digitales avanzadas para que puedas gestionar tus impuestos de manera eficiente y desde cualquier lugar. La tecnología está a tu servicio para simplificar procesos y garantizar resultados óptimos.",
+    "about_hero_title": "Confianza fiscal.\nResultados reales.",
+    "about_hero_body": "López-Espadafor & Asociados, especialistas en fiscalidad para autónomos, pymes y particulares.",
+    "vision_title": "Hecho con visión",
+    "vision_body": "El nuevo asesor debe ser ágil, técnico y humano. Por eso decidí crear una asesoría moderna, donde el cliente entiende lo que paga, sabe lo que necesita y obtiene una respuesta rápida, precisa y adaptada a la realidad actual. Porque el futuro del asesoramiento no está en las palabras, sino en las soluciones.",
+    "born_idea_body": "Nació con una idea clara: cambiar la forma en que los emprendedores reciben asesoramiento. Ya no más trámites eternos ni tecnicismos vacíos. Solo claridad, eficiencia y compromiso real con cada cliente.",
+    "footer_about_title": "Sobre Nosotros",
+    "footer_about_body": "López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "En López-Espadafor & Asociados ofrecemos soluciones fiscales, contables y mercantiles para autónomos, empresas y particulares. Tecnología, experiencia y claridad.",
+    "fiscal_advice": {
+      "title": "Asesoramiento fiscal",
+      "body1": "La asesoría fiscal no tiene por qué ser compleja. Apostamos por la simplicidad, el trato humano y la eficacia real. Si eres autónomo o empresa, estás en el lugar correcto.",
+      "body2": "En nuestra asesoría fiscal, integramos herramientas digitales avanzadas para que puedas gestionar tus impuestos de manera eficiente y desde cualquier lugar. La tecnología está a tu servicio para simplificar procesos y garantizar resultados óptimos."
+    },
+    "solutions_title": "Soluciones Fiscales Inteligentes",
+    "solutions_body": "En López-Espadafor & Asociados entendemos que la fiscalidad puede ser compleja, pero no tiene por qué serlo para ti. Por eso ofrecemos un servicio profesional, claro y adaptado a cada tipo de cliente. Ya seas autónomo, pyme o particular, nos encargamos de todo con un enfoque cercano, eficiente y 100% personalizado.",
+    "features": [
+      "Gestión fiscal completa: declaraciones de impuestos, modelos y obligaciones tributarias al día.",
+      "Contabilidad optimizada: control y orden de tu actividad económica con informes claros y útiles.",
+      "Ahorro y planificación fiscal: anticipación, estrategia y soluciones legales para pagar solo lo justo.",
+      "Representación ante Hacienda: actuamos por ti frente a requerimientos, inspecciones o sanciones."
+    ],
+    "parallax_heading": "Fiscalidad clara. Resultados concretos.",
+    "parallax_subtitle": "En López-Espadafor & Asociados, cada servicio tiene un propósito: simplificarte la vida.",
+    "compliance_title": "Cumplimiento y Ahorro",
+    "compliance_paragraph": "Cumplir con Hacienda no debería ser una carga ni una fuente de incertidumbre. Hemos diseñado un sistema donde particulares y empresas cumplen con la normativa sin errores, evitando sanciones y detectando oportunidades reales de ahorro fiscal.",
+    "compliance_bullets": [
+      "Fiscalidad sin fricción",
+      "Procesos 100% digitalizados",
+      "Decisiones basadas en datos",
+      "Transparencia en tiempo real"
+    ],
+    "tranquility_title": "Tranquilidad fiscal sin complicaciones",
+    "tranquility_subtitle": "Asesoramiento personalizado por López-Espadafor & Asociados",
+    "start_heading": "Inicia tu proyecto con nosotros hoy mismo",
+    "start_paragraphs": [
+      "En López-Espadafor & Asociados no dejamos que las obligaciones fiscales te frenen. Combinamos tecnología de vanguardia con un enfoque cercano para ofrecerte soluciones claras y eficientes. Analizamos cada detalle de tu situación tributaria, anticipándonos a cambios normativos para que tú solo te ocupes de crecer.",
+      "Nuestro compromiso es transformar datos en estrategias: desde la optimización de impuestos hasta la planificación financiera a largo plazo. Trabajamos a tu lado con transparencia y confianza, protegiendo tu patrimonio y potenciando tu tranquilidad. Deja atrás complejidades y avanza seguro con la asesoría moderna que tu empresa merece."
+    ],
+    "start_cta": "Comienza ahora"
+  },
+  "services_title": "Nuestros Servicios",
+  "services_subtitle": "En López-Espadafor & Asociados ofrecemos soluciones fiscales, contables y mercantiles para autónomos, empresas y particulares. Tecnología, experiencia y claridad.",
+  "solutions_title": "Soluciones Fiscales Inteligentes",
+  "solutions_body": "Ofrecemos gestión fiscal completa, contabilidad optimizada, planificación fiscal y representación ante Hacienda.",
+  "compliance_title": "Cumplimiento y Ahorro",
+  "compliance_body": "Cumplimos con la normativa, evitamos sanciones y detectamos oportunidades de ahorro real.",
+  "tranquility_title": "Tranquilidad fiscal sin complicaciones",
+  "start_cta": "Comienza ahora",
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "En López-Espadafor & Asociados somos un equipo dinámico que fusiona tecnología y cercanía para ofrecer soluciones fiscales claras, eficientes y hechas a tu medida.",
+    "hero_title": "Sobre Nosotros",
+    "hero_subtitle": "En López-Espadafor & Asociados somos un equipo dinámico que fusiona tecnología y cercanía para ofrecer soluciones fiscales claras, eficientes y hechas a tu medida.",
+    "lopezespadafor": {
+      "title": "Sobre Nosotros",
+      "body": "En López-Espadafor & Asociados somos un equipo dinámico que fusiona tecnología y cercanía para ofrecer soluciones fiscales claras, eficientes y hechas a tu medida."
+    },
+    "history_title": "Nuestra Historia",
+    "history_body": "López-Espadafor & Asociados nació de la pasión por simplificar el mundo fiscal. Un grupo de profesionales jóvenes, con formación en tributación y nuevas tecnologías, se unió con un objetivo claro: ofrecer un servicio ágil, transparente y completamente digital. Desde el primer día diseñamos procesos que eliminan papeleos innecesarios y garantizan que cada cliente entienda su situación tributaria en tiempo real.\n\nHoy, nuestra asesoría se basa en una plataforma intuitiva que integra seguimiento de impuestos, alertas de cambios normativos y acceso directo a tu expediente. Creemos en la cercanía: cada estrategia fiscal se adapta a las prioridades de tu empresa y se trabaja mano a mano contigo. Así construimos un futuro en el que gestionar impuestos deje de ser una carga y se convierta en una ventaja competitiva para tu negocio.",
+    "history": [
+      "López-Espadafor & Asociados nació de la pasión por simplificar el mundo fiscal. Un grupo de profesionales jóvenes, con formación en tributación y nuevas tecnologías, se unió con un objetivo claro: ofrecer un servicio ágil, transparente y completamente digital. Desde el primer día diseñamos procesos que eliminan papeleos innecesarios y garantizan que cada cliente entienda su situación tributaria en tiempo real.",
+      "Hoy, nuestra asesoría se basa en una plataforma intuitiva que integra seguimiento de impuestos, alertas de cambios normativos y acceso directo a tu expediente. Creemos en la cercanía: cada estrategia fiscal se adapta a las prioridades de tu empresa y se trabaja mano a mano contigo. Así construimos un futuro en el que gestionar impuestos deje de ser una carga y se convierta en una ventaja competitiva para tu negocio."
+    ],
+    "vision": {
+      "title": "Hecho con visión",
+      "body": "El nuevo asesor debe ser ágil, técnico y humano. Por eso decidí crear una asesoría moderna, donde el cliente entiende lo que paga, sabe lo que necesita y obtiene una respuesta rápida, precisa y adaptada a la realidad actual. Porque el futuro del asesoramiento no está en las palabras, sino en las soluciones."
+    },
+    "born_idea": {
+      "body": "Nació con una idea clara: cambiar la forma en que los emprendedores reciben asesoramiento. Ya no más trámites eternos ni tecnicismos vacíos. Solo claridad, eficiencia y compromiso real con cada cliente."
+    },
+    "news_title": "Novedades y Contenidos Clave",
+    "news_body": "Mantente informado y sácale partido a cada actualización para llevar tu gestión fiscal al siguiente nivel.",
+    "staff": [
+      {
+        "title": "Guía de Incentivos y Subvenciones para Pymes",
+        "body": "Recopilamos las ayudas fiscales y subvenciones disponibles este año, con criterios de elegibilidad, plazos de solicitud y ejemplos de éxito. No pierdas la oportunidad de reducir tu carga impositiva."
+      },
+      {
+        "title": "Planificación Fiscal para Startups",
+        "body": "Te mostramos las mejores estrategias fiscales desde la constitución de tu empresa hasta la fase de crecimiento. Incluye ejemplos de estructuras societarias, deducciones iniciales y claves para atraer inversores sin sorpresas tributarias."
+      },
+      {
+        "title": "Declaración de la Renta 2025: Errores Comunes y Cómo Evitarlos",
+        "body": "Analizamos los fallos más frecuentes al presentar la Renta, desde deducciones mal aplicadas hasta omisiones habituales. Con nuestras recomendaciones podrás presentar tu declaración con confianza y maximizar tus devoluciones."
+      }
+    ],
+    "mobility_title": "Movilidad Patrimonial Internacional",
+    "mobility_body": "Gestión integral, cumplimiento normativo y protección de activos en distintos territorios, garantizada por López-Espadafor & Asociados.",
+    "mobility_section_heading": "Impulsa Hoy la Movilidad de tu Patrimonio",
+    "mobility_paragraph1": "En López-Espadafor & Asociados diseñamos estrategias a medida para trasladar y proteger tus activos entre jurisdicciones con total seguridad. Nuestro enfoque combina experiencia legal y fiscal con soluciones digitales que garantizan el cumplimiento normativo local e internacional en cada paso.",
+    "mobility_paragraph2": "Gracias a alianzas con corresponsales en Europa, América y Asia, gestionamos toda la operativa de transferencias, estructuras societarias y trusts, minimizando riesgos y costes. Nuestro equipo te asesora sobre convenios de doble imposición, requisitos de reporting y planificación sucesoria, para que tu patrimonio siempre esté en las mejores manos.",
+    "mobility_cta": "Comienza ahora"
+  },
+  "about_title": "Sobre Nosotros",
+  "about_subtitle": "En López-Espadafor & Asociados somos un equipo dinámico que fusiona tecnología y cercanía para ofrecer soluciones fiscales claras, eficientes y hechas a tu medida.",
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos a tu lado para resolver tus retos fiscales: escríbenos y obtén una respuesta experta en menos de 24 horas.",
+    "address": "Avenida Francisco Ayala\n18014 Granada, España",
+    "email": "lopezespadaforasociados@gmail.com",
+    "phone": "+34 617 125 393",
+    "hours": "Lunes a viernes, de 9:00 h a 18:00 h",
+    "description": "Estamos a tu disposición de lunes a viernes, de 9:00 h a 18:00 h, para resolver cualquier duda o coordinar una reunión presencial o virtual. Nuestro equipo te atenderá en un plazo máximo de 24 horas, ofreciendo soluciones claras y adaptadas a las necesidades de tu empresa. Además, nuestras tarifas son competitivas y ajustadas a tu presupuesto, garantizando la mejor relación calidad–precio para que optimices tu gestión fiscal sin preocuparte por costes elevados. ¡Contáctanos y descubre lo asequible que puede ser una asesoría de excelencia!"
+  },
+  "contact_title": "Contáctanos",
+  "contact_subtitle": "Estamos a tu lado para resolver tus retos fiscales: escríbenos y obtén una respuesta experta en menos de 24 horas.",
+  "map_title": "Trabajamos desde Granada, conectamos contigo desde cualquier lugar",
+  "map_body": "Nuestra sede está en Granada, pero nuestra asesoría es totalmente digital. Gestionamos todo online: rápido, seguro y sin papeleos.",
+  "contact_info_heading": "Información de Contacto",
+  "form": {
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "placeholder": {
+      "name": "Introduce tu nombre",
+      "email": "Introduce tu correo electrónico",
+      "message": "Escribe tu mensaje aquí"
+    },
+    "placeholder_name": "Introduce tu nombre",
+    "placeholder_email": "Introduce tu correo electrónico",
+    "placeholder_message": "Escribe tu mensaje aquí",
+    "success": "¡Mensaje enviado correctamente!",
+    "error": "Por favor, rellena todos los campos."
+  },
+  "form_name": "Nombre",
+  "form_email": "Correo Electrónico",
+  "form_message": "Mensaje",
+  "form_send": "Enviar Mensaje",
+  "form_placeholder_name": "Introduce tu nombre",
+  "form_placeholder_email": "Introduce tu correo electrónico",
+  "form_placeholder_message": "Escribe tu mensaje aquí",
+  "footer": {
+    "about": "López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control.",
+    "rights": "&copy; 2025 López-Espadafor & Asociados. Todos los derechos reservados. Diseño adaptado con precisión fiscal."
+  },
+  "footer_about": "López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control.",
+  "footer_rights": "&copy; 2025 López-Espadafor & Asociados. Todos los derechos reservados. Diseño adaptado con precisión fiscal.",
+  "quick_links": {
+    "title": "Enlaces Rápidos",
+    "about": "Sobre Nosotros",
+    "products": "Productos",
+    "services": "Servicios",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "follow_us": {
+    "title": "Síguenos",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "googleplus": "Google Plus"
+  },
+  "chat": {
+    "title": "¡Hola! 👋",
+    "subtitle": "Inicia un chat. Estamos aquí para ayudarte las 24 horas, los 7 días de la semana.",
+    "footer": "",
+    "getStarted": "Nueva conversación",
+    "inputPlaceholder": "Escribe tu pregunta...",
+    "initialMessages": [
+      "¡Hola! 👋",
+      "Mi nombre es Carlos. ¿En qué puedo ayudarte hoy?"
+    ]
+  },
+  "menu_open": "Abrir menú",
+  "menu_close": "Cerrar menú",
+  "menu_close_char": "✕",
+  "lang_names": {
+    "es": { "aria": "Español", "title": "Español" },
+    "en": { "aria": "Inglés", "title": "English" },
+    "zh": { "aria": "Chino", "title": "中文" },
+    "ar": { "aria": "Árabe", "title": "العربية" }
+  },
+  "lopezespadafor_title": "Confianza fiscal.\nResultados reales.",
+  "lopezespadafor_body": "López-Espadafor & Asociados, especialistas en fiscalidad para\nautónomos, pymes y particulares.",
+  "home_about_title_custom": "Confianza fiscal.\nResultados reales.",
+  "home_about_body_custom": "López-Espadafor & Asociados, especialistas en fiscalidad para\nautónomos, pymes y particulares.",
+  "lopezespadafor_title_footer": "Sobre Nosotros",
+  "lopezespadafor_body_footer": "López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control."
+}

@@ -1,0 +1,7 @@
+/* Minimal placeholder for magnific-popup styles to avoid 404 and console errors.
+   If you use the Magnific Popup plugin later, replace with the real file.
+*/
+.mfp-bg { background: rgba(0,0,0,0.8); }
+.mfp-wrap { z-index: 10000; }
+.mfp-content { max-width: 900px; margin: 0 auto; }
+.mfp-close { color: #fff; }

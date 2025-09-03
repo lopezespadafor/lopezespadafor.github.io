@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>López Espadafor & Asociados</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+		<!-- FORCE VISIBILITY: forzar header encima del hero y enlaces blancos en esta página -->
+		<style>
+		  #fh5co-header { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 999999 !important; background: transparent !important; }
+		  .fh5co-main-nav ul { display: flex !important; justify-content: center !important; gap: 12px !important; }
+		  .fh5co-main-nav ul li a { color: #fff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important; }
+		  .fh5co-hero .overlay, .fh5co-parallax .overlay { z-index: 1000 !important; }
+
+		  /* --- New rules to make the hero image reach the very top and cover the viewport --- */
+		  html, body { height: 100%; margin: 0; padding: 0; }
+
+		  /* Place the small top-row over the hero (transparent) so the background image is visible behind it */
+		  .top-row { position: absolute !important; top: 0; left: 0; right: 0; z-index: 999998 !important; background: transparent !important; }
+
+		  /* Make the hero fill the viewport and ensure the background image covers without white gaps */
+		  .fh5co-hero {
+		    min-height: 100vh !important;
+		    background-size: cover !important;
+		    background-position: center top !important;
+		    background-repeat: no-repeat !important;
+		    margin: 0 !important;
+		    padding: 0 !important;
+		  }
+
+		  /* Keep header above overlays */
+		  #fh5co-header { z-index: 1000000 !important; }
+
+		  /* Hacer el overlay del hero más claro para que la imagen quede más visible detrás del título */
+		  .fh5co-hero > .overlay {
+		    background: rgba(0,0,0,0.25) !important;
+		  }
+		  /* Asegurar que el texto del hero esté por encima del overlay y sea legible */
+		  .fh5co-hero .fh5co-intro, .fh5co-hero h1, .fh5co-hero p {
+		    color: #fff !important;
+		    z-index: 2000 !important;
+		    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+		  }
+
+		  @media screen and (max-width: 768px) {
+		    .mobile-nav-panel {
+		      top: 0 !important;
+		      left: 0 !important;
+		      right: 0 !important;
+		      bottom: auto !important;
+		      transform: none !important;
+		      min-width: 100vw;
+		      max-width: 100vw;
+		      border-radius: 0 0 14px 14px;
+		      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+		      padding: 16px 0 8px 0;
+		      align-items: center;
+		      justify-content: flex-start;
+		      animation: none !important;
+		      transition: none !important;
+		    }
+		    .mobile-nav-panel.show {
+		      display: flex !important;
+		    }
+		    .mobile-nav-panel a {
+		      font-size: 1.35rem !important;
+		    }
+		    .mobile-nav-panel a {
+		      font-size: 1.25rem !important;
+		      font-size: 0.95rem !important;
+		    }
+		    .mobile-nav-panel a {
+		      font-size: 1.5rem !important;
+		    }
+		    .mobile-nav-panel a {
+		      font-size: 1.2rem !important;
+		    }
+		  }
+		  .mobile-nav-panel {
+		      background: #111 !important;
+		      justify-content: center !important;
+		      align-items: center !important;
+		      /* ...existing code... */
+		    }
+		    .mobile-nav-close {
+		      display: flex;
+		      justify-content: center;
+		      align-items: center;
+		      width: 100%;
+		      text-align: center;
+		      padding: 18px 0;
+		      font-size: 1.1em;
+		      color: #fff !important;
+		      background: none;
+		      border: none;
+		      cursor: pointer;
+		      font-weight: 400;
+		    }
+		    .mobile-nav-close {
+		      /* ...existing code... */
+		      background: #fff !important;
+		      color: #111 !important;
+		      border-radius: 50%;
+		      width: 44px;
+		      height: 44px;
+		      justify-content: center !important;
+		      align-items: center !important;
+		      display: flex;
+		      font-size: 1.5em;
+		      margin-left: auto;
+		      margin-right: 8px;
+		    }
+		    .minimal-nav-btn span span {
+		      background: #fff !important;
+		    }
+		    /* ...existing code... */
+		  /* FIX: force nav underline on this page */
+		  .fh5co-main-nav ul li a span {
+		    display: inline-block !important;
+		    padding-bottom: 3px !important;
+		    border-bottom: 2px solid transparent !important;
+		    transition: border-color 0.18s ease, padding-bottom 0.12s ease !important;
+		  }
+		  .fh5co-main-nav ul li a:hover span,
+		  .fh5co-main-nav ul li.fh5co-active a span {
+		    border-bottom-color: #fff !important;
+		  }
+		  /* Mobile panel underline for links without <span> */
+		  .mobile-nav-panel a {
+		    position: relative !important;
+		    padding-bottom: 8px !important;
+		  }
+		  .mobile-nav-panel a::after {
+		    content: "" !important;
+		    position: absolute !important;
+		    left: 8% !important;
+		    right: 8% !important;
+		    bottom: 4px !important;
+		    height: 2px !important;
+		    background: #fff !important;
+		    transform: scaleX(0) !important;
+		    transform-origin: left center !important;
+		    transition: transform 0.18s ease, background-color 0.18s ease !important;
+		  }
+		  .mobile-nav-panel a:hover::after,
+		  .mobile-nav-panel a:focus::after,
+		  .mobile-nav-panel a:active::after {
+		    transform: scaleX(1) !important;
+		  }
+		</style>
+		<style>
+.language-selector {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000002;
+  display: flex;
+  gap: 8px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 18px;
+  padding: 4px 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.language-selector .lang-btn {
+  background: none;
+  border: none;
+  font-size: 1.6em;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.language-selector .lang-btn.selected {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+@media screen and (max-width: 768px) {
+  .language-selector {
+    position: fixed;
+    top: auto;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.85);
+    padding: 6px 12px;
+    border-radius: 22px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+    gap: 12px;
+  }
+  .language-selector .lang-btn {
+    font-size: 2em;
+    color: #fff;
+    background: none;
+  }
+  .language-selector .lang-btn.selected {
+    background: #fff;
+    color: #222;
+  }
+}
+</style>
+
+		 <!-- Inline translations fallback: used when fetch(lang + '.json') fails (file:// or CORS). This contains the same keys as the JSON files and is a lightweight fallback so you can open contact.html locally. -->
+		<script>
+		  window.inlineTranslations = {
+		    "es": {
+		      "meta": { "title": "López Espadafor & Asociados", "description": "Asesoría fiscal moderna para autónomos, pymes y particulares. Tecnología, claridad y trato cercano." },
+		      "nav": { "home": "Inicio", "services": "Servicios", "about": "Sobre Nosotros", "contact": "Contacto" },
+		      "nav_home": "Inicio", "nav_services": "Servicios", "nav_about": "Sobre Nosotros", "nav_contact": "Contacto",
+		      "contact": { "title": "Contáctanos", "subtitle": "Estamos a tu lado para resolver tus retos fiscales: escríbenos y obtén una respuesta experta en menos de 24 horas.", "address": "Avenida Francisco Ayala\n18014 Granada, España", "email": "lopezespadaforasociados@gmail.com", "phone": "+34 617 125 393", "hours": "Lunes a viernes, de 9:00 h a 18:00 h", "description": "Estamos a tu disposición de lunes a viernes, de 9:00 h a 18:00 h, para resolver cualquier duda o coordinar una reunión presencial o virtual. Nuestro equipo te atenderá en un plazo máximo de 24 horas, ofreciendo soluciones claras y adaptadas a las necesidades de tu empresa. Además, nuestras tarifas son competitivas y ajustadas a tu presupuesto, garantizando la mejor relación calidad–precio para que optimices tu gestión fiscal sin preocuparte por costes elevados. ¡Contáctanos y descubre lo asequible que puede ser una asesoría de excelencia!" },
+		      "contact_title": "Contáctanos", "contact_subtitle": "Estamos a tu lado para resolver tus retos fiscales: escríbenos y obtén una respuesta experta en menos de 24 horas.",
+		      "contact_info_heading": "Información de Contacto",
+		      "form_placeholder_name": "Introduce tu nombre", "form_placeholder_email": "Introduce tu correo electrónico", "form_placeholder_message": "Escribe tu mensaje aquí", "form_send": "Enviar Mensaje",
+		      "map_title": "Trabajamos desde Granada, conectamos contigo desde cualquier lugar", "map_body": "Nuestra sede está en Granada, pero nuestra asesoría es totalmente digital. Gestionamos todo online: rápido, seguro y sin papeleos.",
+		      "footer_about": "López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control.",
+		      "footer_rights": "&copy; 2025 López-Espadafor & Asociados. Todos los derechos reservados. Diseño adaptado con precisión fiscal.",
+		      "menu_open": "Abrir menú", "menu_close": "Cerrar menú", "menu_close_char": "✕",
+		      "lang_names": { "es": { "aria": "Español", "title": "Español" }, "en": { "aria": "Inglés", "title": "English" }, "zh": { "aria": "Chino", "title": "中文" }, "ar": { "aria": "Árabe", "title": "العربية" } },
+		      "meta": { "title": "López Espadafor & Asociados", "description": "استشارات ضريبية عصرية للمستقلين والشركات الصغيرة والمتوسطة والأفراد. تكنولوجيا، وضوح ونهج شخصي." },
+		      "nav": { "home": "الرئيسية", "services": "الخدمات", "about": "من نحن", "contact": "اتصل بنا" },
+		      "nav_home": "الرئيسية", "nav_services": "الخدمات", "nav_about": "من نحن", "nav_contact": "اتصل بنا",
+		      "contact": { "title": "اتصل بنا", "subtitle": "نحن هنا لحل تحدياتك الضريبية: اكتب لنا واحصل على رد خبير خلال أقل من 24 ساعة.", "address": "Avenida Francisco Ayala\n18014 Granada, إسبانيا", "email": "lopezespadaforasociados@gmail.com", "phone": "+34 617 125 393", "hours": "من الإثنين إلى الجمعة، 09:00 — 18:00", "description": "نحن متاحون للإجابة على أي استفسار أو تنسيق اجتماع حضوري أو افتراضي. نرد خلال 24 ساعة ونقدّم رسومًا تنافسية ومناسبة لميزانيتك." },
+		      "contact_title": "اتصل بنا", "contact_subtitle": "نحن هنا لحل تحدياتك الضريبية: اكتب لنا واحصل على رد خبير خلال أقل من 24 ساعة.",
+		      "contact_info_heading": "معلومات الاتصال",
+		      "form_placeholder_name": "أدخل اسمك", "form_placeholder_email": "أدخل بريدك الإلكتروني", "form_placeholder_message": "اكتب رسالتك هنا", "form_send": "إرسال الرسالة",
+		      "map_title": "مقرنا في غرناطة، نتواصل معك من أي مكان", "map_body": "مقرنا في غرناطة، لكن استشاراتنا رقمية بالكامل. يمكنك التواصل معنا عبر البريد الإلكتروني أو مكالمة فيديو أو من خلال نموذج الاتصال.",
+		      "footer_about": "تقدم López-Espadafor & Asociados استشارات ضريبية عصرية وواضحة للعاملين مستقلين والشركات والأفراد. فريق شاب يبسط إدارة ضرائبك ويساعدك على السيطرة عليها.",
+		      "footer_rights": "&copy; 2025 López-Espadafor & Associates. جميع الحقوق محفوظة. تصميم بدقة ضريبية.",
+		      "menu_open": "فتح القائمة", "menu_close": "إغلاق القائمة", "menu_close_char": "✕",
+		      "lang_names": { "es": { "aria": "الإسبانية", "title": "Español" }, "en": { "aria": "الإنجليزية", "title": "English" }, "zh": { "aria": "الصينية", "title": "中文" }, "ar": { "aria": "العربية", "title": "العربية" } },
+		      "chat": { "title": "مرحبًا! 👋", "subtitle": "ابدأ محادثة. نحن هنا لمساعدتك على مدار الساعة طوال أيام الأسبوع.", "getStarted": "محادثة جديدة", "inputPlaceholder": "اكتب سؤالك...", "initialMessages": ["مرحبًا! 👋","اسمي كارلوس. كيف يمكنني مساعدتك اليوم؟"] }
+		    }
+		  };
+		</script>
+
+		<!-- Modernizr JS -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body class="has-top-row hero-over page-contact">
+	<div class="language-selector" id="languageSelector">
+  <button class="lang-btn" data-lang="es" aria-label="Español">🇪🇸</button>
+  <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+  <button class="lang-btn" data-lang="zh" aria-label="Chinese">🇨🇳</button>
+  <button class="lang-btn" data-lang="ar" aria-label="Arabic">🇸🇦</button>
+</div>
+
+	<div id="fh5co-wrap">
+		<header id="fh5co-header">
+			<div class="container">
+				<nav class="fh5co-main-nav">
+					<!-- Botón hamburguesa solo visible en móvil -->
+					<button class="minimal-nav-btn" id="minimalNavBtn" aria-label="Abrir menú" type="button" tabindex="0">
+						<span style="display:inline-block;width:28px;height:28px;position:relative;">
+							<span style="position:absolute;top:6px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+							<span style="position:absolute;top:12px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+							<span style="position:absolute;top:18px;left:0;width:100%;height:4px;background:#222;border-radius:2px;"></span>
+						</span>
+					</button>
+					<!-- Panel de navegación móvil unificado -->
+					<div class="mobile-nav-panel" id="mobileNavPanel" role="menu" aria-hidden="true">
+						<a href="index.html">Inicio</a>
+						<a href="services.html">Servicios</a>
+						<a href="about.html">Sobre Nosotros</a>
+						<a href="contact.html">Contacto</a>
+						<button class="mobile-nav-close" id="mobileNavClose" tabindex="0" aria-label="Cerrar">✕</button>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarNav" aria-hidden="false">
+						<ul>
+							<li><a href="index.html"><span>Inicio</span></a></li>
+							<li><a href="services.html"><span>Servicios</span></a></li>
+							<li><a href="about.html"><span>Sobre Nosotros</span></a></li>
+							<li class="fh5co-active"><a href="contact.html"><span>Contacto</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<div class="fh5co-hero" style="background-image: url(images/hero_3.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 100vh; background-attachment: fixed;">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+						<div class="fh5co-intro fh5co-table-cell">
+							<h1 class="text-center" id="heroTitle">Contáctanos</h1>
+							<p class="text-center" id="heroSubtitle">Estamos a tu lado para resolver tus retos fiscales: escríbenos y obtén una respuesta experta en menos de 24 horas.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h2 id="contactInfoHeading">Información de Contacto</h2>
+						<p class="address" id="contactAddress">Avenida Francisco Ayala<br>18014 Granada, España</p>
+						<p class="email" id="contactEmail">lopezespadaforasociados@gmail.com</p>
+						<p class="phone" id="contactPhone">+34 617 125 393</p>
+						<p class="contact-desc" id="contactDescription">Estamos a tu disposición de lunes a viernes, de 9:00 h a 18:00 h, para resolver cualquier duda o coordinar una reunión presencial o virtual. Nuestro equipo te atenderá en un plazo máximo de 24 horas, ofreciendo soluciones claras y adaptadas a las necesidades de tu empresa. Además, nuestras tarifas son competitivas y ajustadas a tu presupuesto, garantizando la mejor relación calidad–precio para que optimices tu gestión fiscal sin preocuparte por costes elevados. ¡Contáctanos y descubre lo asequible que puede ser una asesoría de excelencia!</p>
+					</div>
+					<div class="col-md-6 col-md-push-1">
+						<form action="mailto:lopezespadaforasociados@gmail.com" method="post" enctype="text/plain">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Nombre" name="name" data-i18n-placeholder="form_placeholder_name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Correo Electrónico" name="email" data-i18n-placeholder="form_placeholder_email">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" name="message" cols="30" rows="10" placeholder="Mensaje" data-i18n-placeholder="form_placeholder_message"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-md" data-i18n="form_send">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Map y texto: ahora con marcas semánticas y iframe responsivo -->
+		<div class="container-map">
+			<div id="map" class="map-container">
+				<div class="map-responsive">
+					<iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.217847497123!2d-3.598556684593719!3d37.17733697936433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce0c9c8bf2b%3A0x8c8e8e8e8e8e8e8e!2sGranada!5e0!3m2!1ses!2ses!4v1691088000000!5m2!1ses!2ses" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div class="map-text">
+				<h3 class="map-title">Trabajamos desde Granada, conectamos contigo desde cualquier lugar</h3>
+				<p class="map-body">Nuestra sede está en Granada, pero nuestra asesoría es totalmente digital. Gestionamos todo online: rápido, seguro y sin papeleos. Puedes contactarnos por email, videollamada o a través de nuestro formulario. Tú eliges cómo y cuándo.</p>
+			</div>
+			</div>
+
+	</div> <!-- END fh5co-wrap -->
+
+	<footer id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h3 id="footerAboutHeading">Sobre Nosotros</h3>
+					<p id="footerAboutText">López-Espadafor & Asociados ofrece asesoría fiscal moderna y clara para autónomos, empresas y particulares. Un equipo joven que simplifica tu fiscalidad y te ayuda a tomar el control.</p>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h3 id="footerQuickHeading">Enlaces Rápidos</h3>
+					<ul id="quickLinks">
+						<li><a href="#">Sobre Nosotros</a></li>
+						<li><a href="#">Productos</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-md-push-1">
+					<h3 id="footerFollowHeading">Síguenos</h3>
+					<ul class="fh5co-social" id="followUs">
+						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/carlos-l%C3%B3pez-espadafor-fern%C3%A1ndez-a351b0265/"><i class="icon-linkedin"></i> <span>LinkedIn</span></a></li>
+						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
+						<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 fh5co-copyright text-center">
+					<p><small id="footerRights">&copy; 2025 López-Espadafor & Asociados. Todos los derechos reservados. Diseño adaptado con precisión fiscal.</small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Eliminado el script de Google Maps para evitar el error -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
+	<script src="js/google_map.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Mobile nav script: toggle minimal top-right panel -->
+	<script>
+	(function(){
+	  var btn = document.getElementById('minimalNavBtn');
+	  var panel = document.getElementById('mobileNavPanel');
+	  var closeBtn = document.getElementById('mobileNavClose');
+	  var links = panel.querySelectorAll('a');
+
+	  if(!btn || !panel) return;
+
+	  function setState(show){
+	    if(show){
+	      panel.classList.add('show');
+	      panel.setAttribute('aria-hidden','false');
+	      btn.setAttribute('aria-expanded','true');
+	    } else {
+	      panel.classList.remove('show');
+	      panel.setAttribute('aria-hidden','true');
+	      btn.setAttribute('aria-expanded','false');
+	    }
+	  }
+
+	  btn.addEventListener('click', function(e){
+	    e.stopPropagation();
+	    setState(!panel.classList.contains('show'));
+	  });
+	  closeBtn && closeBtn.addEventListener('click', function(e){ e.stopPropagation(); setState(false); });
+	  links.forEach(function(link){ link.addEventListener('click', function(){ setState(false); }); });
+	  document.addEventListener('click', function(e){
+	    if(panel.classList.contains('show') && !panel.contains(e.target) && e.target !== btn){
+	      setState(false);
+	    }
+	  }, true);
+	  panel.addEventListener('click', function(e){ e.stopPropagation(); });
+	})();
+	</script>
+	<script>
+(function(){
+  var selector = document.getElementById('languageSelector');
+  var btns = selector ? selector.querySelectorAll('.lang-btn') : [];
+  var LANG_KEY = 'site_lang';
+  var defaultLang = 'es';
+
+  function setLang(lang) {
+    localStorage.setItem(LANG_KEY, lang);
+    btns.forEach(function(btn){
+      btn.classList.toggle('selected', btn.dataset.lang === lang);
+    });
+    // Aquí podrías cargar traducciones dinámicas si las tienes
+  }
+
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      setLang(btn.dataset.lang);
+    });
+  });
+
+  var savedLang = localStorage.getItem(LANG_KEY) || defaultLang;
+  setLang(savedLang);
+})();
+</script>
+  <script>
+  // Traducción dinámica multi-idioma
+  (function(){
+    var LANG_KEY = 'site_lang';
+    var defaultLang = 'es';
+    var selector = document.getElementById('languageSelector');
+    var btns = selector ? selector.querySelectorAll('.lang-btn') : [];
+    var currentLang = localStorage.getItem(LANG_KEY) || defaultLang;
+    function setLang(lang) {
+      localStorage.setItem(LANG_KEY, lang);
+      btns.forEach(function(btn){
+        btn.classList.toggle('selected', btn.dataset.lang === lang);
+      });
+      loadLang(lang);
+    }
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        setLang(btn.dataset.lang);
+      });
+    });
+    function loadLang(lang) {
+      fetch(lang + '.json')
+        .then(function(r){ return r.json(); })
+        .catch(function(){
+          console.warn('Falling back to inline translations for', lang);
+          return window.inlineTranslations[lang] || {};
+        })
+        .then(function(t){
+          // Navegación principal (replaced with robust updater)
+          (function(){
+            var desktopNav = document.querySelectorAll('.fh5co-main-nav ul li a');
+            var mobileNav = document.querySelectorAll('.mobile-nav-panel a');
+            var keys = ['nav_home','nav_services','nav_about','nav_contact'];
+            function applyList(list){
+              list.forEach(function(el, i){
+                var key = keys[i];
+                if(!key) return;
+                var value = (t && t.nav && t.nav[key.replace('nav_','')]) || (t && t[key]);
+                if(!value) return;
+                var span = el.querySelector('span');
+                if(span) span.textContent = value;
+                else el.textContent = value;
+              });
+            }
+            applyList(desktopNav);
+            applyList(mobileNav);
+          })();
+          // Hero principal
+          var el;
+          el = document.querySelector('.fh5co-intro h1');
+          if(el && t.contact_title) el.textContent = t.contact_title;
+          el = document.querySelector('.fh5co-intro p');
+          if(el && t.contact_subtitle) el.textContent = t.contact_subtitle;
+          // Formulario de contacto
+          el = document.querySelector('input[name="name"]');
+          if(el && t.form_placeholder_name) el.placeholder = t.form_placeholder_name;
+          el = document.querySelector('input[name="email"]');
+          if(el && t.form_placeholder_email) el.placeholder = t.form_placeholder_email;
+          el = document.querySelector('textarea[name="message"]');
+          if(el && t.form_placeholder_message) el.placeholder = t.form_placeholder_message;
+          el = document.querySelector('input[type="submit"]');
+          if(el && t.form_send) el.value = t.form_send;
+          // Etiquetas (si existen)
+          var labels = document.querySelectorAll('form .form-group label');
+          if(labels.length === 3) {
+            labels[0].textContent = t.form_name;
+            labels[1].textContent = t.form_email;
+            labels[2].textContent = t.form_message;
+          }
+          // Pie de página
+          el = document.querySelector('#fh5co-footer .col-md-4 p');
+          if(el && t.footer_about) el.textContent = t.footer_about;
+          el = document.querySelector('.fh5co-copyright p');
+          if(el && t.footer_rights) el.innerHTML = t.footer_rights;
+
+				  // Bloque de información de contacto
+				  el = document.getElementById('contactInfoHeading');
+				  if(el && t.contact_info_heading) el.textContent = t.contact_info_heading;
+				  el = document.querySelector('.col-md-5 .address');
+				  if(el && t.contact && t.contact.address) el.innerHTML = t.contact.address.replace(/\n/g, '<br>');
+				  el = document.querySelector('.col-md-5 .email');
+				  if(el && t.contact && t.contact.email) el.textContent = t.contact.email;
+				  el = document.querySelector('.col-md-5 .phone');
+				  if(el && t.contact && t.contact.phone) el.textContent = t.contact.phone;
+				  el = document.querySelector('.col-md-5 .contact-desc');
+				  if(el && t.contact && t.contact.description) el.textContent = t.contact.description;
+
+				  // Mapa y texto asociado
+				  el = document.querySelector('.map-text .map-title');
+				  if(el && t.map_title) el.textContent = t.map_title;
+				  el = document.querySelector('.map-text .map-body');
+				  if(el && t.map_body) el.textContent = t.map_body;
+
+				  // Pie: encabezados y enlaces rápidos
+				  el = document.getElementById('footerAboutHeading');
+				  if(el && t.about && t.about.title) el.textContent = t.about.title;
+				  el = document.getElementById('footerAboutText');
+				  if(el && t.footer_about) el.textContent = t.footer_about;
+				  el = document.getElementById('footerQuickHeading');
+				  if(el && t.quick_links && t.quick_links.title) el.textContent = t.quick_links.title;
+				  var qlinks = document.querySelectorAll('#quickLinks li a');
+				  if(qlinks.length && t.quick_links){
+					if(t.quick_links.about) qlinks[0].textContent = t.quick_links.about;
+					if(t.quick_links.products) qlinks[1].textContent = t.quick_links.products;
+					if(t.quick_links.services) qlinks[2].textContent = t.quick_links.services;
+					if(t.quick_links.blog) qlinks[3].textContent = t.quick_links.blog;
+					if(t.quick_links.contact) qlinks[4].textContent = t.quick_links.contact;
+				  }
+				  el = document.getElementById('footerFollowHeading');
+				  if(el && t.follow_us && t.follow_us.title) el.textContent = t.follow_us.title;
+				  var follows = document.querySelectorAll('#followUs li a span');
+				  if(follows.length && t.follow_us){
+					if(t.follow_us.twitter) follows[0].textContent = t.follow_us.twitter;
+					if(t.follow_us.linkedin) follows[1].textContent = t.follow_us.linkedin;
+					if(t.follow_us.instagram) follows[2].textContent = t.follow_us.instagram;
+					if(t.follow_us.googleplus) follows[3].textContent = t.follow_us.googleplus;
+				  }
+
+          // Establecer título de la página y meta descripción si están en el JSON
+          if(t.meta && t.meta.title) document.title = t.meta.title;
+          if(t.meta && t.meta.description){
+            var md = document.querySelector('meta[name="description"]');
+            if(md) md.setAttribute('content', t.meta.description);
+          }
+
+          // Traducir botones del menú móvil
+          var mnBtn = document.getElementById('minimalNavBtn');
+          if(mnBtn && t.menu_open) mnBtn.setAttribute('aria-label', t.menu_open);
+          var mClose = document.getElementById('mobileNavClose');
+          if(mClose && t.menu_close) mClose.setAttribute('aria-label', t.menu_close);
+          if(mClose && t.menu_close_char) mClose.textContent = t.menu_close_char;
+
+          // Ajustar atributos lang/dir y etiquetado de botones del selector de idioma
+          try{
+            document.documentElement.lang = lang;
+            document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+            if(lang === 'ar') document.body.classList.add('rtl'); else document.body.classList.remove('rtl');
+          } catch(e){}
+
+          var langSelector = document.getElementById('languageSelector');
+          if(langSelector && t.lang_names){
+            var langBtns = langSelector.querySelectorAll('.lang-btn');
+            langBtns.forEach(function(b){
+              var code = b.dataset.lang;
+              var info = t.lang_names[code];
+              if(info){
+                if(typeof info === 'string'){
+                  b.setAttribute('aria-label', info);
+                  b.setAttribute('title', info);
+                } else {
+                  if(info.aria) b.setAttribute('aria-label', info.aria);
+                  if(info.title) b.setAttribute('title', info.title);
+                }
+              }
+            });
+          }
+        });
+    }
+    setLang(currentLang);
+  })();
+  </script>
+  <style>
+  .language-selector {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1000001;
+    display: flex;
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 18px;
+    padding: 4px 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+  }
+  .language-selector .lang-btn {
+    background: none;
+    border: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 50%;
+    transition: background 0.2s;
+  }
+  .language-selector .lang-btn.selected {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  }
+  @media screen and (max-width: 768px) {
+    .language-selector {
+      position: fixed;
+      top: auto;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.85);
+      padding: 6px 12px;
+      border-radius: 22px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+      gap: 12px;
+    }
+    .language-selector .lang-btn {
+      font-size: 2em;
+      color: #fff;
+      background: none;
+    }
+    .language-selector .lang-btn.selected {
+      background: #fff;
+      color: #222;
+    }
+  }
+  </style>
+	</body>
+</html>
+
+<!-- Inserted chat widget (stylesheet + module script) -->
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+  (async function(){
+    var lang = localStorage.getItem('site_lang') || 'es';
+    try{
+      var r = await fetch(lang + '.json');
+      var t = await r.json();
+    } catch(e){
+      console.warn('No se pudo cargar el archivo de idioma para el chat', e);
+      var t = {};
+    }
+    const module = await import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js');
+    const createChat = module.createChat;
+    createChat({
+      webhookUrl: 'https://lopezespadafor.app.n8n.cloud/webhook/66e107fa-4f85-4cbe-bf75-f6b116979cac/chat',
+      defaultLanguage: lang,
+      i18n: (function(){
+        var i = {};
+        i[lang] = {
+          title: (t.chat && t.chat.title) || '',
+          subtitle: (t.chat && t.chat.subtitle) || '',
+          footer: (t.chat && t.chat.footer) || '',
+          getStarted: (t.chat && (t.chat.getStarted || t.chat.getStarted)) || 'New conversation',
+          inputPlaceholder: (t.chat && t.chat.inputPlaceholder) || 'Escribe tu pregunta...'
+        };
+        return i;
+      })(),
+      initialMessages: (t.chat && t.chat.initialMessages) || ['¡Hola! 👋','Mi nombre es Carlos. ¿En qué puedo ayudarte hoy?']
+    });
+  })();
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "title": "López Espadafor & Asociados",
+    "description": "为自由职业者、中小企业和个人提供现代税务咨询。科技、清晰与亲切服务。"
+  },
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "about": "关于我们",
+    "contact": "联系"
+  },
+  "nav_home": "首页",
+  "nav_services": "服务",
+  "nav_about": "关于我们",
+  "nav_contact": "联系",
+  "home": {
+    "title": "您值得信赖的数字咨询",
+    "subtitle": "专为中小企业、自由职业者和新创意而设计。严谨、敏捷，百分百为您量身定制。"
+  },
+  "home_title": "您值得信赖的数字咨询",
+  "home_subtitle": "专为中小企业、自由职业者和新创意而设计。严谨、敏捷，百分百为您量身定制。",
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "在López-Espadafor & Associates，我们为自由职业者、公司和个人提供税务、会计和商业解决方案。科技、经验与清晰。",
+    "fiscal_advice": {
+      "title": "税务咨询",
+      "body1": "税务咨询不必复杂。我们致力于简化流程、人性化服务和真正的高效。如果您是自由职业者或企业，这里就是您的正确选择。",
+      "body2": "在我们的税务咨询中，我们集成了先进的数字工具，让您可以高效且随时随地管理税务。科技为您服务，简化流程，确保最佳结果。"
+    },
+    "solutions_title": "智能税务解决方案",
+    "solutions_body": "我们提供全面的税务管理、优化的会计、税务筹划以及税务机关代理服务。",
+    "features": [
+      "全面税务管理：税务申报、各类表格与税务义务均维持在最新状态。",
+      "优化会计：对您的经营活动进行控制与整理，提供清晰且有用的报告。",
+      "节税与税务规划：前瞻性策略与合法方案，帮助您只支付应付税额。",
+      "税务机关代理：在接到税务要求、检查或罚款时，我们代您应对。"
+    ],
+    "parallax_heading": "清晰的税务。具体的成果。",
+    "parallax_subtitle": "在López-Espadafor & Asociados，每项服务都有其目的：简化您的生活。",
+    "compliance_title": "合规与节税",
+    "compliance_paragraph": "遵守税务规定不应成为负担。我们确保合规、避免处罚并发现真实的节税机会。",
+    "compliance_bullets": [
+      "无摩擦的税务",
+      "流程全面数字化",
+      "以数据为基础的决策",
+      "实时透明"
+    ],
+    "tranquility_title": "无烦恼的税务安心",
+    "tranquility_subtitle": "由 López-Espadafor & Asociados 提供的个性化咨询",
+    "start_heading": "今天就与我们一起启动您的项目",
+    "start_paragraphs": [
+      "在López-Espadafor & Asociados，我们不会让税务义务成为您的阻碍。我们将先进技术与贴近客户的方式相结合，为您提供清晰高效的解决方案。我们分析您税务状况的每个细节，预见法规变化，让您只需专注于成长。",
+      "我们的承诺是将数据转化为策略：从税务优化到长期财务规划。我们与您并肩工作，以透明与信任保护您的资产并提升您的安心。告别复杂，使用您公司应得的现代化顾问服务。"
+    ],
+    "start_cta": "立即开始"
+  },
+  "services_title": "我们的服务",
+  "services_subtitle": "在López-Espadafor & Associates，我们为自由职业者、公司和个人提供税务、会计和商业解决方案。科技、经验与清晰。",
+  "solutions_title": "智能税务解决方案",
+  "solutions_body": "我们提供全面的税务管理、优化的会计、税务筹划以及税务机关代理服务。",
+  "compliance_title": "合规与节税",
+  "compliance_body": "遵守税务规定不应成为负担。我们确保合规、避免处罚并发现真实的节税机会。",
+  "tranquility_title": "无烦恼的税务安心",
+  "start_cta": "立即开始",
+  "about": {
+    "title": "关于我们",
+    "subtitle": "在López-Espadafor & Associates，我们是一个充满活力的团队，融合科技与亲近，为您提供清晰、高效、量身定制的税务解决方案。",
+    "hero_title": "关于我们",
+    "hero_subtitle": "在López-Espadafor & Associates，我们是一个充满活力的团队，融合科技与亲近，为您提供清晰、高效、量身定制的税务解决方案。",
+    "lopezespadafor": {
+      "title": "关于我们",
+      "body": "López-Espadafor & Asociados 提供现代、清晰的税务顾问服务，面向个体经营者、企业和个人。一个年轻的团队，简化您的税务并帮助您掌控财务。"
+    },
+    "history_title": "我们的历史",
+    "history_body": "López-Espadafor & Asociados 源于简化税务世界的热情。我们设计流程以消除不必要的文书工作，并确保每位客户实时了解其税务状况。\n\n如今，我们的咨询建立在一个直观的平台上，集成了税务跟踪、法规变更提醒和对档案的直接访问。我们重视亲近客户：每一项税务策略都会根据贵公司的优先事项进行定制，并与您紧密合作实施。这样，我们构建了一个让税务管理不再成为负担、而是成为企业竞争优势的未来。",
+    "history": [
+      "López-Espadafor & Asociados 源于简化税务世界的热情。我们设计流程以消除不必要的文书工作，并确保每位客户实时了解其税务状况。",
+      "如今，我们的咨询建立在一个直观的平台上，集成了税务跟踪、法规变更提醒和对档案的直接访问。我们重视亲近客户：每一项税务策略都会根据贵公司的优先事项进行定制，并与您紧密合作实施。这样，我们构建了一个让税务管理不再成为负担、而是成为企业竞争优势的未来。"
+    ],
+    "vision": {
+      "title": "以远见打造",
+      "body": "新一代顾问应当敏捷、专业且富有人情味。因此我决定创建一家现代化咨询公司，让客户明白所付费用，清楚所需，并获得快速、精准、贴合现实的答复。"
+    },
+    "born_idea": {
+      "body": "我们的起源是一个明确的理念：改变创业者获得咨询的方式。不再有无休止的手续与空洞术语，只有清晰、高效和对每位客户的真实承诺。"
+    },
+    "news_title": "新闻与重要内容",
+    "news_body": "保持信息更新，充分利用每次更新，将您的税务管理提升到新的水平。",
+    "staff": [
+      {
+        "title": "面向中小企业的补助与资助指南",
+        "body": "我们汇总了今年可用的财政援助与补助，包含资格条件、申请期限和成功案例。不要错过减轻税负的机会。"
+      },
+      {
+        "title": "初创企业的税务筹划",
+        "body": "我们向您展示从公司成立到成长阶段的最佳税务策略。包括公司结构示例、初期扣除以及吸引投资者的关键点，避免税务意外。"
+      },
+      {
+        "title": "2025 年个人所得税申报：常见错误及规避方法",
+        "body": "我们分析申报个人所得税时最常见的错误，从扣除项误用到常见遗漏。凭借我们的建议，您可自信提交申报并最大化退税。"
+      }
+    ],
+    "mobility_title": "国际资产流动",
+    "mobility_body": "全面管理、合规与跨司法区的资产保护，由 López-Espadafor & Asociados 提供保障。",
+    "mobility_section_heading": "现在就推动您的资产流动",
+    "mobility_paragraph1": "在 López-Espadafor & Asociados，我们设计量身策略，将您的资产在司法区之间安全转移并保护。我们将法律与税务专业知识与数字化解决方案结合，确保每一步都符合本地和国际合规要求。",
+    "mobility_paragraph2": "得益于在欧洲、美洲和亚洲的合作伙伴网络，我们管理所有转移操作、公司架构与信托事务，最大限度降低风险与成本。我们的团队会就避免双重征税的条约、报备要求与继承规划提供建议，让您的资产始终处于最佳保障中。",
+    "mobility_cta": "立即开始"
+  },
+  "about_title": "关于我们",
+  "about_subtitle": "在López-Espadafor & Associates，我们是一个充满活力的团队，融合科技与亲近，为您提供清晰、高效、量身定制的税务解决方案。",
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们随时为您解决税务难题：请写信给我们，24 小时内获得专家回复。",
+    "address": "Avenida Francisco Ayala\n18014 Granada, 西班牙",
+    "email": "lopezespadaforasociados@gmail.com",
+    "phone": "+34 617 125 393",
+    "hours": "周一至周五，09:00 — 18:00",
+    "description": "我们周一至周五，09:00 至 18:00，随时为您解答任何疑问或安排线下或线上会议。我们的团队将在最多 24 小时内回复，提供清晰且针对贵公司需求量身定制的解决方案。此外，我们的收费具有竞争力并根据您的预算进行调整，确保最佳的性价比，让您在优化税务管理时无需担心高昂成本。联系我们，体验高质量顾问服务也可以负担得起！"
+  },
+  "contact_title": "联系我们",
+  "contact_subtitle": "我们随时为您解决税务难题：请写信给我们，24 小时内获得专家回复。",
+  "map_title": "我们在格拉纳达办公，随时随地与您保持联系",
+  "map_body": "我们的总部位于格拉纳达，但我们的咨询服务完全数字化。我们在线处理一切：快速、安全且无纸化。您可以通过电子邮件、视频通话或我们的表单与我们联系。您选择方式和时间。",
+  "contact_info_heading": "联系信息",
+  "form": {
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "留言",
+    "send": "发送信息",
+    "placeholder": {
+      "name": "请输入您的姓名",
+      "email": "请输入您的邮箱",
+      "message": "在此输入您的留言"
+    },
+    "placeholder_name": "请输入您的姓名",
+    "placeholder_email": "请输入您的邮箱",
+    "placeholder_message": "在此输入您的留言",
+    "success": "信息发送成功！",
+    "error": "请填写所有字段。"
+  },
+  "form_name": "姓名",
+  "form_email": "邮箱",
+  "form_message": "留言",
+  "form_send": "发送信息",
+  "form_placeholder_name": "请输入您的姓名",
+  "form_placeholder_email": "请输入您的邮箱",
+  "form_placeholder_message": "在此输入您的留言",
+  "footer": {
+    "about": "López-Espadafor & Asociados 提供现代、清晰的税务顾问服务，面向个体经营者、企业和个人。一个年轻的团队，简化您的税务并帮助您掌控财务。",
+    "rights": "&copy; 2025 López-Espadafor & Associates。保留所有权利。以精准税务设计。"
+  },
+  "footer_about": "López-Espadafor & Asociados 提供现代、清晰的税务顾问服务，面向个体经营者、企业和个人。一个年轻的团队，简化您的税务并帮助您掌控财务。",
+  "footer_rights": "&copy; 2025 López-Espadafor & Associates。保留所有权利。以精准税务设计。",
+  "quick_links": {
+    "title": "快速链接",
+    "about": "关于我们",
+    "products": "产品",
+    "services": "服务",
+    "blog": "博客",
+    "contact": "联系"
+  },
+  "follow_us": {
+    "title": "关注我们",
+    "twitter": "推特",
+    "linkedin": "领英",
+    "instagram": "Instagram",
+    "googleplus": "Google Plus"
+  },
+  "chat": {
+    "title": "您好！👋",
+    "subtitle": "开始聊天。我们 24/7 随时为您提供帮助。",
+    "footer": "",
+    "getStarted": "开始对话",
+    "inputPlaceholder": "输入您的问题...",
+    "initialMessages": [
+      "您好！👋",
+      "我叫 Carlos。我今天可以为您做些什么？"
+    ]
+  },
+  "menu_open": "打开菜单",
+  "menu_close": "关闭菜单",
+  "menu_close_char": "✕",
+  "lang_names": {
+    "es": { "aria": "西班牙语", "title": "Español" },
+    "en": { "aria": "英语", "title": "English" },
+    "zh": { "aria": "中文", "title": "中文" },
+    "ar": { "aria": "阿拉伯语", "title": "العربية" }
+  },
+  "lopezespadafor_title": "值得信赖的税务。\n实际成效。",
+  "lopezespadafor_body": "López-Espadafor & Asociados，专注于为自由职业者、中小企业和个人提供税务服务。",
+  "home_about_title_custom": "值得信赖的税务。\n实际成效。",
+  "home_about_body_custom": "López-Espadafor & Asociados，专注于为自由职业者、中小企业和个人提供税务服务。",
+  "lopezespadafor_title_footer": "关于我们"
+}

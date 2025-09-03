@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "title": "López Espadafor & Associates",
+    "description": "Modern tax consultancy for freelancers, SMEs and individuals. Technology, clarity and a personal approach."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "nav_home": "Home",
+  "nav_services": "Services",
+  "nav_about": "About Us",
+  "nav_contact": "Contact",
+  "home": {
+    "title": "Your trusted digital consultancy",
+    "subtitle": "Designed for SMEs, freelancers and new ideas. Rigorous, agile and 100% tailored to you."
+  },
+  "home_title": "Your trusted digital consultancy",
+  "home_subtitle": "Designed for SMEs, freelancers and new ideas. Rigorous, agile and 100% tailored to you.",
+  "services": {
+    "title": "Our Services",
+    "subtitle": "At López-Espadafor & Associates we offer tax, accounting and commercial solutions for freelancers, companies and individuals. Technology, experience and clarity.",
+    "fiscal_advice": {
+      "title": "Tax Advice",
+      "body1": "Tax advice doesn't have to be complex. We are committed to simplicity, a human approach, and real efficiency. If you are self-employed or a company, you are in the right place.",
+      "body2": "In our tax consultancy, we integrate advanced digital tools so you can manage your taxes efficiently and from anywhere. Technology is at your service to simplify processes and guarantee optimal results."
+    },
+    "solutions_title": "Smart Tax Solutions",
+    "solutions_body": "At López-Espadafor & Associates we understand that taxation can be complex, but it doesn't have to be for you. We offer a professional, clear service tailored to every client type—self-employed, SME or individual—handling everything with a close, efficient and fully personalized approach.",
+    "features": [
+      "Full tax management: tax returns, forms and up-to-date tax obligations.",
+      "Optimized accounting: control and order of your economic activity with clear, useful reports.",
+      "Savings and tax planning: anticipation, strategy and legal solutions to pay only what's fair.",
+      "Representation before the tax office: we act on your behalf for requests, audits or penalties."
+    ],
+    "parallax_heading": "Clear taxation. Concrete results.",
+    "parallax_subtitle": "At López-Espadafor & Associates, every service has a purpose: to simplify your life.",
+    "compliance_title": "Compliance and Savings",
+    "compliance_paragraph": "Complying with the tax authorities should not be a burden or a source of uncertainty. We have designed a system where individuals and companies meet regulations without errors, avoid penalties and detect real tax-saving opportunities.",
+    "compliance_bullets": [
+      "Frictionless taxation",
+      "100% digitized processes",
+      "Data-driven decisions",
+      "Real-time transparency"
+    ],
+    "tranquility_title": "Tax peace of mind without complications",
+    "tranquility_subtitle": "Personalized advice by López-Espadafor & Associates",
+    "start_heading": "Start your project with us today",
+    "start_paragraphs": [
+      "At López-Espadafor & Associates we don't let tax obligations hold you back. We combine cutting-edge technology with a close approach to offer clear and efficient solutions. We analyze every detail of your tax situation, anticipating regulatory changes so you can focus on growth.",
+      "Our commitment is to turn data into strategies: from tax optimization to long-term financial planning. We work alongside you with transparency and trust, protecting your assets and boosting your peace of mind. Leave complexities behind and move forward confidently with the modern consultancy your company deserves."
+    ],
+    "start_cta": "Get started"
+  },
+  "services_title": "Our Services",
+  "services_subtitle": "At López-Espadafor & Associates we offer tax, accounting and commercial solutions for freelancers, companies and individuals. Technology, experience and clarity.",
+  "solutions_title": "Smart Tax Solutions",
+  "solutions_body": "We provide full tax management, optimized accounting, tax planning and representation before the tax authorities.",
+  "compliance_title": "Compliance and Savings",
+  "compliance_body": "Complying with tax authorities should not be a burden. We ensure compliance, avoid penalties and detect real savings opportunities.",
+  "tranquility_title": "Tax peace of mind without complications",
+  "start_cta": "Get started",
+  "about": {
+    "title": "About Us",
+    "subtitle": "At López-Espadafor & Associates we are a dynamic team that combines technology and closeness to offer clear, efficient and tailored tax solutions.",
+    "hero_title": "About Us",
+    "hero_subtitle": "At López-Espadafor & Associates we are a dynamic team that combines technology and closeness to offer clear, efficient and tailored tax solutions.",
+    "lopezespadafor": {
+      "title": "About Us",
+      "body": "At López-Espadafor & Associates we are a dynamic team that combines technology and closeness to offer clear, efficient and tailored tax solutions."
+    },
+    "history_title": "Our Story",
+    "history_body": "López-Espadafor & Associates was born from a passion for simplifying the tax world. A team of young professionals, trained in taxation and new technologies, came together with a clear goal: to provide an agile, transparent and fully digital service. From day one we designed processes that eliminate unnecessary paperwork and ensure every client understands their tax situation in real time.\n\nToday, our firm is built on an intuitive platform that integrates tax tracking, alerts for regulatory changes and direct access to your file. We believe in close relationships: every tax strategy is tailored to your company's priorities and developed hand in hand with you. In this way we build a future where managing taxes stops being a burden and becomes a competitive advantage for your business.",
+    "history": [
+      "López-Espadafor & Associates was born from a passion for simplifying the world of taxation. A team of young professionals trained in taxation and new technologies came together with a clear goal: to provide an agile, transparent and fully digital service. From day one we designed processes that eliminate unnecessary paperwork and ensure every client understands their tax situation in real time.",
+      "Today, our firm is built on an intuitive platform that integrates tax tracking, alerts for regulatory changes and direct access to your file. We believe in close relationships: every tax strategy is tailored to your company's priorities and developed hand in hand with you. In this way we build a future where managing taxes stops being a burden and becomes a competitive advantage for your business."
+    ],
+    "vision": {
+      "title": "Made with Vision",
+      "body": "The new advisor must be agile, technical, and human. That's why I decided to create a modern consultancy, where the client understands what they pay for, knows what they need, and gets a quick, precise, and up-to-date response. Because the future of consultancy is not in words, but in solutions."
+    },
+    "born_idea": {
+      "body": "It was born with a clear idea: to change the way entrepreneurs receive advice. No more endless procedures or empty jargon. Only clarity, efficiency, and real commitment to each client."
+    },
+    "news_title": "News and Key Content",
+    "news_body": "Stay informed and make the most of every update to take your tax management to the next level.",
+    "staff": [
+      {
+        "title": "Guide to Grants and Subsidies for SMEs",
+        "body": "We compile the available fiscal aids and subsidies this year, with eligibility criteria, application deadlines and success examples. Don't miss the opportunity to reduce your tax burden."
+      },
+      {
+        "title": "Tax Planning for Startups",
+        "body": "We show the best tax strategies from company formation through the growth phase. Includes examples of corporate structures, initial deductions and key points to attract investors without tax surprises."
+      },
+      {
+        "title": "Income Tax Return 2025: Common Mistakes and How to Avoid Them",
+        "body": "We analyze the most frequent mistakes when filing the Income Tax return, from incorrectly applied deductions to common omissions. With our recommendations you will be able to file your return with confidence and maximize your refunds."
+      }
+    ],
+    "mobility_title": "International Asset Mobility",
+    "mobility_body": "Comprehensive management, regulatory compliance and asset protection across jurisdictions, guaranteed by López-Espadafor & Associates.",
+    "mobility_section_heading": "Boost Your Asset Mobility Today",
+    "mobility_paragraph1": "At López-Espadafor & Associates we design tailored strategies to move and protect your assets between jurisdictions with full security. Our approach combines legal and tax expertise with digital solutions that ensure local and international compliance every step of the way.",
+    "mobility_paragraph2": "Thanks to partnerships with correspondents in Europe, the Americas and Asia, we manage all transfer operations, corporate structures and trusts, minimizing risks and costs. Our team advises you on double taxation treaties, reporting requirements and succession planning so your assets are always in the best hands.",
+    "mobility_cta": "Get started"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are here to solve your tax challenges: write to us and get an expert response in less than 24 hours.",
+    "address": "Avenida Francisco Ayala\n18014 Granada, Spain",
+    "email": "lopezespadaforasociados@gmail.com",
+    "phone": "+34 617 125 393",
+    "hours": "Monday to Friday, 9:00 — 18:00",
+    "description": "We are available Monday to Friday, from 9:00 to 18:00, to answer any questions or arrange an in-person or virtual meeting. Our team will respond within a maximum of 24 hours, offering clear solutions tailored to your company's needs. In addition, our fees are competitive and adjusted to your budget, ensuring the best value for money so you can optimise your tax management without worrying about high costs. Contact us and discover how affordable excellent advisory services can be!"
+  },
+  "contact_title": "Contact Us",
+  "contact_subtitle": "We are here to solve your tax challenges: write to us and get an expert response in less than 24 hours.",
+  "map_title": "Based in Granada, connected with you from anywhere",
+  "map_body": "Our headquarters are in Granada, but our consultancy is fully digital. We handle everything online: fast, secure and paperless. You can contact us by email, video call or through our form. You choose how and when.",
+  "contact_info_heading": "Contact Information",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "placeholder": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "message": "Type your message here"
+    },
+    "placeholder_name": "Enter your name",
+    "placeholder_email": "Enter your email",
+    "placeholder_message": "Type your message here",
+    "success": "Message sent successfully!",
+    "error": "Please fill in all fields."
+  },
+  "form_name": "Name",
+  "form_email": "Email",
+  "form_message": "Message",
+  "form_send": "Send Message",
+  "form_placeholder_name": "Enter your name",
+  "form_placeholder_email": "Enter your email",
+  "form_placeholder_message": "Type your message here",
+  "footer": {
+    "about": "At López-Espadafor & Associates we are a dynamic team that combines technology and closeness to offer clear, efficient and tailored tax solutions.",
+    "rights": "&copy; 2025 López-Espadafor & Associates. All rights reserved. Design adapted with fiscal precision."
+  },
+  "footer_about": "At López-Espadafor & Associates we are a dynamic team that combines technology and closeness to offer clear, efficient and tailored tax solutions.",
+  "footer_rights": "&copy; 2025 López-Espadafor & Associates. All rights reserved. Design adapted with fiscal precision.",
+  "quick_links": {
+    "title": "Quick Links",
+    "about": "About Us",
+    "products": "Products",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "follow_us": {
+    "title": "Follow Us",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "googleplus": "Google Plus"
+  },
+  "chat": {
+    "title": "Hello! 👋",
+    "subtitle": "Start a chat. We’re here to help 24/7.",
+    "footer": "",
+    "getStarted": "New conversation",
+    "inputPlaceholder": "Type your question...",
+    "initialMessages": [
+      "Hello! 👋",
+      "My name is Carlos. How can I help you today?"
+    ]
+  },
+  "menu_open": "Open menu",
+  "menu_close": "Close menu",
+  "menu_close_char": "✕",
+  "lang_names": {
+    "es": { "aria": "Spanish", "title": "Español" },
+    "en": { "aria": "English", "title": "English" },
+    "zh": { "aria": "Chinese", "title": "中文" },
+    "ar": { "aria": "Arabic", "title": "العربية" }
+  },
+  "about_title": "About Us",
+  "about_subtitle": "At López-Espadafor & Associates we are a dynamic team that combines technology and closeness to offer clear, efficient and tailored tax solutions.",
+  "lopezespadafor_title": "Fiscal confidence.\nReal results.",
+  "lopezespadafor_body": "López-Espadafor & Associates, specialists in taxation for freelancers, SMEs and individuals.",
+  "home_about_title_custom": "Fiscal confidence.\nReal results.",
+  "home_about_body_custom": "López-Espadafor & Associates, specialists in taxation for freelancers, SMEs and individuals."
+}

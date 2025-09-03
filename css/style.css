@@ -1,0 +1,2286 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+body {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #777777;
+  color: #7f7f7f;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
+a {
+  color: #52d3aa;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+  color: #52d3aa;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #52d3aa;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #52d3aa;
+}
+
+::selection {
+  color: #fff;
+  background: #52d3aa;
+}
+
+/* Ajustes: padding-top solo fuera de la página de inicio */
+#fh5co-wrap {
+  position: relative;
+  background: #fff;
+  z-index: 2;
+  margin-bottom: 0; /* reduced from 450px to remove bottom white space */
+  /* padding-top eliminado aquí, se aplica sólo cuando no es la página de inicio */
+}
+body:not(.home) #fh5co-wrap {
+  padding-top: 72px; /* espacio para cabecera fija en páginas internas */
+}
+
+/* Cabecera: comportamiento por defecto (páginas internas) */
+body:not(.home) #fh5co-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: #ffffff; /* franja blanca en las páginas internas */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+body:not(.home) #fh5co-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+}
+
+/* Cabecera para la página de inicio: encima del hero, fondo transparente y texto blanco */
+body.home #fh5co-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: transparent;
+  box-shadow: none;
+}
+body.home #fh5co-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+}
+body.home .fh5co-main-nav ul { display: flex !important; justify-content: center; gap: 8px; padding: 0; margin: 0; list-style: none; }
+body.home .fh5co-main-nav ul li a { color: #fff !important; padding: 14px 16px; display: block; }
+body.home #fh5co-header nav li.fh5co-active a { color: #fff !important; font-weight: 500; }
+
+/* Mantener contraste del toggler en móvil sobre el hero */
+@media screen and (max-width: 768px) {
+  body.home .navbar-toggler .bar { background: #fff; }
+  body.home .collapse.navbar-collapse { background: rgba(0,0,0,0.6); }
+}
+
+#fh5co-footer {
+  padding-top: calc(3em + 8px); /* aumenta la banda superior negra (3em más la franja) */
+  padding-bottom: 1.5em;
+  position: relative; /* ensure footer is in normal flow */
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  z-index: 1;
+  height: auto;
+  background: #333333;
+  font-size: 18px;
+}
+#fh5co-footer::before {
+  content: "";
+  display: block;
+  height: 8px; /* pequeña franja negra superior */
+  background: #000; /* color más oscuro para la franja */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 992px) {
+  #fh5co-footer {
+    height: inherit;
+    position: relative;
+    padding: 3em 0;
+  }
+}
+#fh5co-footer .fh5co-social li {
+  display: block;
+}
+#fh5co-footer p {
+  line-height: 1.5;
+}
+#fh5co-footer h3 {
+  color: #fff;
+  font-size: 20px;
+}
+#fh5co-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+#fh5co-footer a:hover {
+  color: #52d3aa;
+}
+#fh5co-footer ul {
+  padding: 0;
+  margin: 0;
+}
+#fh5co-footer ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#fh5co-footer .fh5co-copyright {
+  padding-top: 3em;
+}
+#fh5co-footer .fh5co-copyright small {
+  display: block;
+}
+
+/* Ajustes de separación en el footer para móvil: más espacio entre 'Enlaces Rápidos' y 'Síguenos' */
+@media screen and (max-width: 768px) {
+  /* Separación entre columnas cuando se apilan en móvil */
+  #fh5co-footer .col-md-4,
+  #fh5co-footer .col-md-3,
+  #fh5co-footer .col-md-3.col-md-push-1 {
+    margin-bottom: 1.8rem; /* aumentado desde 1.2rem */
+  }
+
+  /* Un poco más de separación entre cada enlace de la lista para mejorar lectura */
+  #fh5co-footer .col-md-3 ul li {
+    margin-bottom: 12px; /* aumentado desde 8px */
+  }
+
+  /* Asegurar un extra de separación específicamente entre la columna de 'Enlaces Rápidos' y la de 'Síguenos' */
+  #fh5co-footer .col-md-3.col-md-push-1 + .col-md-3.col-md-push-1 {
+    margin-top: 1.4rem; /* aumentado desde 0.8rem */
+  }
+}
+
+/* Reduce spacing between quick links in the footer (updated) */
+#fh5co-footer .col-md-3 ul li {
+  margin-bottom: 4px; /* menor separación entre 'Enlaces Rápidos' */
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile override */
+  #fh5co-footer .col-md-3 ul li {
+    margin-bottom: 4px !important;
+  }
+}
+
+#fh5co-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: #ffffff; /* franja blanca en la parte superior */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+#fh5co-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px; /* espacio vertical de la cabecera */
+}
+#fh5co-header nav {
+  text-align: center;
+}
+#fh5co-header nav ul {
+  padding: 0;
+  margin: 0;
+}
+#fh5co-header nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+#fh5co-header nav li a {
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+#fh5co-header nav li a span {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 2px solid transparent;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header nav li a {
+    padding: 10px 2px;
+  }
+}
+#fh5co-header nav li a:hover {
+  color: white;
+}
+#fh5co-header nav li a:hover span {
+  border-bottom: 2px solid #fff;
+}
+#fh5co-header nav li.fh5co-active a {
+  color: #fff;
+}
+#fh5co-header nav li.fh5co-active a span {
+  border-bottom: 2px solid #fff;
+}
+
+/* Fix: ensure only one underline on nav items — remove any border applied to the anchor itself so only the span shows the underline */
+.fh5co-main-nav ul li a,
+#fh5co-header nav li a {
+  position: relative;
+  color: #fff !important;
+  background: none;
+  border: none;
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: color 0.18s, border-bottom 0.18s;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+.fh5co-main-nav ul li.fh5co-active a,
+#fh5co-header nav li.fh5co-active a {
+  border-bottom: none !important;
+}
+
+/* Final safeguard: always remove border-bottom from the anchor and keep underline only on the span */
+.fh5co-main-nav ul li a,
+#fh5co-header nav li a {
+  border-bottom: none !important;
+}
+.fh5co-main-nav ul li a span,
+#fh5co-header nav li a span {
+  border-bottom: 2px solid transparent !important;
+}
+.fh5co-main-nav ul li a:hover span,
+#fh5co-header nav li a:hover span {
+  border-bottom-color: #fff !important;
+}
+.fh5co-main-nav ul li.fh5co-active a span,
+#fh5co-header nav li.fh5co-active a span {
+  border-bottom-color: #fff !important;
+}
+
+.fh5co-table,
+.fh5co-table-cell,
+.fh5co-hero,
+.fh5co-parallax {
+  height: 740px;
+}
+
+.fh5co-hero, .fh5co-parallax {
+  background-color: #555;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.fh5co-hero .overlay, .fh5co-parallax .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: .2;
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-hero, .fh5co-parallax {
+    height: inherit;
+    padding: 4em 0;
+  }
+}
+.fh5co-hero .fh5co-intro h1, .fh5co-parallax .fh5co-intro h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-hero .fh5co-intro h1, .fh5co-parallax .fh5co-intro h1 {
+    font-size: 30px;
+  }
+}
+.fh5co-hero .fh5co-intro p, .fh5co-parallax .fh5co-intro p {
+  color: #fff;
+}
+.fh5co-hero .fh5co-intro p a, .fh5co-parallax .fh5co-intro p a {
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.fh5co-hero .fh5co-intro p a:hover, .fh5co-parallax .fh5co-intro p a:hover {
+  color: #fff;
+}
+
+.fh5co-table {
+  display: table;
+}
+
+.fh5co-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fh5co-section {
+  padding: 5em 0;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-section {
+    padding: 3em 0;
+  }
+}
+
+/* Mejoras en las media queries para dispositivos intermedios */
+@media screen and (max-width: 992px) {
+  .fh5co-section {
+    padding: 4em 0;
+  }
+
+  .fh5co-hero, .fh5co-parallax {
+    height: 560px;
+  }
+
+  #fh5co-footer {
+    padding: 3em 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fh5co-section {
+    padding: 2em 0;
+  }
+
+  .fh5co-hero, .fh5co-parallax {
+    height: 340px;
+  }
+
+  #fh5co-footer {
+    padding: 2em 0;
+  }
+
+  .fh5co-main-nav ul li a {
+    font-size: 14px;
+  }
+}
+
+/* Ajustes para imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustes para el pie de página */
+#fh5co-footer {
+  position: relative;
+  height: auto;
+}
+
+.fh5co-feature {
+  text-align: left;
+  width: 100%;
+  float: left;
+  padding: 20px;
+}
+.fh5co-feature .fh5co-icon {
+  float: left;
+  width: 10%;
+  display: block;
+  margin-top: 5px;
+}
+.fh5co-feature .fh5co-icon i {
+  color: #52d3aa;
+  font-size: 70px;
+}
+@media screen and (max-width: 1200px) {
+  .fh5co-feature .fh5co-icon i {
+    font-size: 40px;
+  }
+}
+.fh5co-feature.fh5co-feature-sm .fh5co-icon i {
+  color: #52d3aa;
+  font-size: 28px;
+}
+@media screen and (max-width: 1200px) {
+  .fh5co-feature.fh5co-feature-sm .fh5co-icon i {
+    font-size: 28px;
+  }
+}
+.fh5co-feature .fh5co-text {
+  float: right;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-feature .fh5co-text {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fh5co-feature .fh5co-text {
+    width: 72%;
+  }
+}
+.fh5co-feature .fh5co-text h2, .fh5co-feature .fh5co-text h3 {
+  margin: 0;
+  padding: 0;
+}
+.fh5co-feature .fh5co-text h3 {
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.fh5co-social {
+  padding: 0;
+  margin: 0;
+}
+.fh5co-social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+}
+.fh5co-social li a span {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  padding-left: 10px;
+}
+
+.btn {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 8px 20px !important;
+}
+.btn.btn-sm {
+  padding: 4px 15px !important;
+}
+.btn.btn-md {
+  padding: 8px 20px !important;
+}
+.btn.btn-lg {
+  padding: 18px 36px !important;
+}
+.btn:hover, .btn:active, .btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-primary {
+  background: #52d3aa;
+  color: #fff;
+  border: 2px solid #52d3aa;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #66d8b4 !important;
+  border-color: #66d8b4 !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #52d3aa;
+  border: 2px solid #52d3aa;
+}
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+  background: #52d3aa;
+  color: #fff;
+}
+
+.btn-success {
+  background: #5cb85c;
+  color: #fff;
+  border: 2px solid #5cb85c;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background: #4cae4c !important;
+  border-color: #4cae4c !important;
+}
+.btn-success.btn-outline {
+  background: transparent;
+  color: #5cb85c;
+  border: 2px solid #5cb85c;
+}
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+  background: #5cb85c;
+  color: #fff;
+}
+
+.btn-info {
+  background: #5bc0de;
+  color: #fff;
+  border: 2px solid #5bc0de;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background: #46b8da !important;
+  border-color: #46b8da !important;
+}
+.btn-info.btn-outline {
+  background: transparent;
+  color: #5bc0de;
+  border: 2px solid #5bc0de;
+}
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+  background: #5bc0de;
+  color: #fff;
+}
+
+.btn-warning {
+  background: #f0ad4e;
+  color: #fff;
+  border: 2px solid #f0ad4e;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+  background: #eea236 !important;
+  border-color: #eea236 !important;
+}
+.btn-warning.btn-outline {
+  background: transparent;
+  color: #f0ad4e;
+  border: 2px solid #f0ad4e;
+}
+.btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+  background: #f0ad4e;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #d9534f;
+  color: #fff;
+  border: 2px solid #d9534f;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background: #d43f3a !important;
+  border-color: #d43f3a !important;
+}
+.btn-danger.btn-outline {
+  background: transparent;
+  color: #d9534f;
+  border: 2px solid #d9534f;
+}
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+  background: #d9534f;
+  color: #fff;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+}
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  height: 54px;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+.form-control:active, .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #52d3aa;
+}
+
+.fh5co-check {
+  padding: 0 0 0 0;
+  margin: 0 0 1.5em 0;
+}
+.fh5co-check li {
+  padding: 0 0 0 40px;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+.fh5co-check li:before {
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0;
+  top: .3em;
+  content: "\f00c";
+  color: #52d3aa;
+}
+
+.fh5co-staff img {
+  margin-bottom: 1em;
+}
+.fh5co-staff h3 {
+  margin: 0;
+}
+.fh5co-staff h4 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#map {
+  width: 100%;
+  height: 700px;
+}
+@media screen and (max-width: 768px) {
+  #map {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.row-bottom-padded-lg {
+  padding-bottom: 7em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-lg {
+    padding-bottom: 2em;
+  }
+}
+
+.row-bottom-padded-md {
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-md {
+    padding-bottom: 2em;
+  }
+}
+
+.row-bottom-padded-sm {
+  padding-bottom: 2em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 2em;
+  }
+}
+
+/* Add styles for responsive navigation menu */
+.navbar-toggler {
+    display: none;
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        width: 44px;
+        height: 40px;
+        padding: 8px;
+        background: transparent;
+        border: 0;
+        z-index: 1200;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .navbar-toggler:focus {
+        outline: 2px solid rgba(82,211,170,0.4);
+        border-radius: 4px;
+    }
+
+    /* Barras del icono hamburguesa */
+    .navbar-toggler .bar {
+        display: block;
+        width: 26px;
+        height: 2px;
+        margin: 5px auto;
+        background: #fff; /* blanco para contrastar con héroe oscuro */
+        border-radius: 2px;
+        transition: transform 0.28s ease, opacity 0.28s ease, background 0.2s ease;
+        transform-origin: center;
+    }
+
+    /* Estado abierto: animar a cruz */
+    .navbar-toggler.open .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    .navbar-toggler.open .bar:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    .navbar-toggler.open .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Cambiar color si el header está sobre fondo claro (moderno fallback) */
+    header.fixed-light .navbar-toggler .bar,
+    header.light .navbar-toggler .bar {
+        background: #333;
+    }
+
+    /* Mostrar/ocultar la caja de navegación (div.collapse) en móvil */
+    .collapse.navbar-collapse {
+        display: none;
+        width: 100%;
+        background: #222; /* coincide con .fh5co-main-nav mobile */
+        position: absolute;
+        left: 0;
+        top: 64px;
+        z-index: 1100;
+        padding: 10px 16px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    .collapse.navbar-collapse.show {
+        display: block;
+    }
+
+    .collapse.navbar-collapse ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .collapse.navbar-collapse ul li a { color: #fff; padding: 10px 8px; }
+
+    .fh5co-main-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .fh5co-main-nav ul.show {
+        display: flex;
+    }
+
+    .fh5co-main-nav ul li {
+        margin: 5px 0;
+    }
+
+    .fh5co-main-nav ul li a {
+        color: white;
+    }
+}
+
+/* REMOVE FORCE: allow JS to control mobile menu visibility */
+/* Antes teníamos reglas que forzaban el menú siempre visible, eso rompe el toggler. */
+
+/* Comportamiento correcto: oculto por defecto y mostrado solo si .show */
+.collapse.navbar-collapse { display: none; }
+.collapse.navbar-collapse.show { display: block; }
+
+/* En escritorio siempre visible (ancho >= 769px) */
+@media screen and (min-width: 769px) {
+  .collapse.navbar-collapse { display: block !important; position: static !important; background: transparent !important; padding: 0 !important; box-shadow: none !important; top: auto !important; }
+  .collapse.navbar-collapse ul { flex-direction: row; gap: 0; }
+  .collapse.navbar-collapse ul li { display: inline-block; margin: 0 6px; }
+  .collapse.navbar-collapse ul li a { padding: 20px; }
+}
+
+/* Transición suave al abrir/cerrar el menú móvil */
+.collapse.navbar-collapse { transition: max-height 0.28s ease, opacity 0.28s ease; overflow: hidden; }
+.collapse.navbar-collapse.show { opacity: 1; max-height: 600px; }
+.collapse.navbar-collapse { opacity: 0; max-height: 0; }
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mejoras específicas para móviles sin cambiar apariencia en portátil/desktop */
+@media screen and (max-width: 768px) {
+  /* Texto y legibilidad */
+  body {
+    font-size: 16px; /* reduce ligeramente para móviles */
+    line-height: 1.5;
+  }
+  p {
+    font-size: 15px;
+    margin-bottom: 1.2em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+  }
+
+  /* Encabezado / navegación */
+  #fh5co-header {
+    position: relative; /* evita solapamientos en móvil */
+  }
+  .fh5co-main-nav ul {
+    display: none; /* se muestra con .show desde el JS del toggler */
+    flex-direction: column;
+    background-color: #222; /* tono más oscuro para mejor contraste */
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .fh5co-main-nav ul.show {
+    display: flex;
+  }
+  .fh5co-main-nav ul li { margin: 6px 0; }
+  .fh5co-main-nav ul li a { color: #fff; padding: 10px; display: block; }
+
+  /* Botones */
+  .btn {
+    font-size: 15px;
+    padding: 10px 16px !important;
+  }
+
+  /* Héroe y parallax */
+  .fh5co-hero, .fh5co-parallax {
+    height: auto; /* permitir contenido fluido en móvil */
+    padding: 3.5em 0;
+    background-attachment: scroll; /* evita problemas de parallax en móviles */
+  }
+  .fh5co-hero .fh5co-intro h1, .fh5co-parallax .fh5co-intro h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  /* Imágenes: mantener recorte controlado y aspecto uniforme */
+  img { max-width: 100%; height: auto; display: block; }
+  /* Clases específicas para galerías/staff/portafolio */
+  .fh5co-staff img, .fh5co-portfolio img, .gallery img {
+    width: 100%;
+    height: 200px; /* altura uniforme en móvil */
+    object-fit: cover; /* corta sin deformar */
+  }
+  /* si hay thumbnails horizontales muy pequeñas */
+  .fh5co-staff .img-responsive, .fh5co-portfolio .img-responsive { height: auto; }
+
+  /* Features */
+  .fh5co-feature { padding: 14px; }
+  .fh5co-feature .fh5co-icon { width: 18%; margin-top: 0; }
+  .fh5co-feature .fh5co-text { width: 80%; float: none; margin-top: 8px; }
+
+  /* Map */
+  #map { height: 200px; }
+
+  /* Ajustes generales de layout móvil */
+  .row-bottom-padded-lg { padding-bottom: 2.5em; }
+  .row-bottom-padded-md { padding-bottom: 2em; }
+  .row-bottom-padded-sm { padding-bottom: 1.5em; }
+}
+
+@media screen and (max-width: 480px) {
+  body { font-size: 15px; line-height: 1.4; }
+  p { font-size: 14px; }
+  .fh5co-hero .fh5co-intro h1, .fh5co-parallax .fh5co-intro h1 { font-size: 28px; }
+  .btn { font-size: 14px; padding: 8px 12px !important; }
+  .fh5co-feature .fh5co-icon i { font-size: 26px; }
+  .fh5co-staff img, .fh5co-portfolio img, .gallery img { height: 150px; }
+  .fh5co-feature .fh5co-text { width: 100%; }
+  .fh5co-main-nav ul li a { font-size: 16px; }
+}
+
+/* Responsive map container and layout adjustments */
+.container-map {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2.5em 5%;
+}
+.map-container {
+  flex: 1 1 60%;
+  max-width: 60%;
+}
+.map-responsive {
+  position: relative;
+  width: 100%;
+  /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.map-text {
+  flex: 0 0 35%;
+  max-width: 35%;
+  color: #333;
+}
+.map-text h3 { margin-top: 0; }
+
+/* Ensure general images and content spacing are mobile-friendly */
+@media screen and (max-width: 992px) {
+  .container-map { margin: 2em 4%; gap: 1.25rem; }
+  .map-container { max-width: 65%; flex: 1 1 65%; }
+  .map-text { max-width: 32%; flex: 0 0 32%; }
+}
+
+@media screen and (max-width: 768px) {
+  .container-map {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1.6em 3%;
+  }
+  .map-container, .map-text { max-width: 100%; flex: 1 1 100%; }
+  .map-text { margin-top: 1rem; }
+
+  /* Reduce hero padding for small devices */
+  .fh5co-hero, .fh5co-parallax { padding: 2.5em 0; }
+
+  /* Buttons a tamaño cómodo en móvil */
+  .btn { font-size: 15px; padding: 10px 14px !important; }
+}
+
+@media screen and (max-width: 480px) {
+  .container-map { margin: 1em 2%; }
+  .map-responsive { padding-bottom: 75%; }
+  .fh5co-hero .fh5co-intro h1 { font-size: 28px; }
+  .btn { font-size: 14px; padding: 8px 12px !important; }
+}
+
+/* Keep .img-responsive behavior (already defined) and ensure object-fit where used */
+img { max-width: 100%; height: auto; display: block; }
+
+/* Ensure navigation shows the four desktop buttons correctly (no change, just safeguard) */
+@media screen and (min-width: 769px) {
+  .fh5co-main-nav ul { display: flex !important; }
+}
+
+/* HEADER: barra fija, fondo blanco y navegación centrada */
+#fh5co-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: #ffffff; /* franja blanca en la parte superior */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+#fh5co-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px; /* espacio vertical de la cabecera */
+}
+#fh5co-header nav { text-align: center; }
+.fh5co-main-nav ul {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.fh5co-main-nav ul li { display: inline-block; }
+.fh5co-main-nav ul li a {
+  color: #222 !important; /* texto oscuro sobre fondo blanco */
+  padding: 14px 16px;
+  display: block;
+}
+#fh5co-header nav li.fh5co-active a {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+/* Evitar que el contenido quede oculto detrás de la cabecera fija */
+#fh5co-wrap {
+  padding-top: 72px; /* ajusta si la cabecera necesita más/menos espacio */
+}
+
+/* Pequeños ajustes responsive: en móvil mantener contraste y espaciado */
+@media screen and (max-width: 768px) {
+  #fh5co-header .container {
+    padding: 6px 12px;
+  }
+  .fh5co-main-nav ul { flex-direction: column; gap: 0; }
+  .fh5co-main-nav ul li a { padding: 10px 12px; color: #fff; }
+  #fh5co-header { background: rgba(0,0,0,0.6); }
+}
+
+/* OVERRIDE: cabecera transparente y enlaces blancos EN TODAS las páginas */
+#fh5co-header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+#fh5co-header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+}
+.fh5co-main-nav ul {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.fh5co-main-nav ul li { display: inline-block; }
+.fh5co-main-nav ul li a {
+  color: #fff !important; /* enlaces en blanco encima de la imagen */
+  padding: 14px 16px;
+  display: block;
+}
+#fh5co-header nav li.fh5co-active a {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* Evitar espacio superior que empujaba el contenido; queremos la navegación sobre el hero */
+#fh5co-wrap { padding-top: 0 !important; }
+
+/* Ajustes responsive para mantener contraste del toggler en móvil */
+@media screen and (max-width: 768px) {
+  .navbar-toggler .bar { background: #fff !important; }
+  .collapse.navbar-collapse { background: rgba(0,0,0,0.6) !important; }
+  .collapse.navbar-collapse ul li a { color: #fff !important; }
+}
+
+/* FINAL OVERRIDE: navegación encima del hero - enlaces blancos y siempre visible */
+#fh5co-header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000 !important; /* asegurar encima de todo */
+  background: transparent !important;
+  box-shadow: none !important;
+  pointer-events: auto;
+}
+#fh5co-header .container { padding: 8px 15px; display: flex; justify-content: center; align-items: center; }
+.fh5co-main-nav { pointer-events: auto; }
+.fh5co-main-nav ul {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.fh5co-main-nav ul li { display: inline-block; }
+.fh5co-main-nav ul li a {
+  color: #fff !important;
+  padding: 12px 14px !important;
+  display: block !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+.fh5co-main-nav ul li.fh5co-active a {
+  color: #fff !important;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(255,255,255,0.85);
+}
+
+/* Asegurar header y navegación visibles encima del overlay del hero */
+#fh5co-header {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000 !important; /* muy por encima */
+}
+.fh5co-hero .overlay, .fh5co-parallax .overlay {
+  z-index: 1500 !important; /* por debajo del header */
+}
+.fh5co-main-nav, .fh5co-main-nav ul {
+  z-index: 10001 !important;
+}
+.fh5co-main-nav ul li a {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.75) !important;
+}
+
+@media screen and (min-width: 769px) {
+  .collapse.navbar-collapse { display: block !important; }
+  .fh5co-main-nav ul { display: flex !important; }
+}
+
+/* Asegurar que no haya padding superior que empuje el hero */
+#fh5co-wrap { padding-top: 0 !important; }
+
+/* Aumentar contraste del overlay del hero para que el texto y la navegación blanca se vean mejor */
+.fh5co-hero .overlay, .fh5co-parallax .overlay {
+  background: rgba(0,0,0,0.35) !important; /* más oscuro para contraste */
+}
+
+/* Móvil: mantener toggler y menú desplegable legible */
+@media screen and (max-width: 768px) {
+  .navbar-toggler { z-index: 2100; }
+  .navbar-toggler .bar { background: #fff !important; }
+  .collapse.navbar-collapse { position: absolute; top: 56px; left: 0; right: 0; z-index: 2050; background: rgba(0,0,0,0.7); display: none; }
+  .collapse.navbar-collapse.show { display: block; }
+  .collapse.navbar-collapse ul { flex-direction: column; padding: 8px 12px; }
+  .collapse.navbar-collapse ul li a { color: #fff !important; padding: 10px 12px !important; }
+}
+
+/* Safety: forzar visibilidad si algún otro estilo marca display:none */
+.fh5co-main-nav ul[style*="display:none"] { display: flex !important; }
+
+/* FORCE: mostrar siempre el menú (evitar que mobile JS lo oculte sin clase 'show') */
+.collapse.navbar-collapse ul { display: flex !important; flex-direction: row !important; gap: 12px !important; }
+.collapse.navbar-collapse ul li { display: inline-block !important; }
+.collapse.navbar-collapse ul li a { color: #fff !important; }
+
+/* Asegurar todos los enlaces del header en blanco */
+#fh5co-header a { color: #fff !important; }
+#fh5co-header a span { color: #fff !important; }
+
+/* Si hay reglas inline que oculten el ul, forzarlo visible */
+.fh5co-main-nav ul[style*="display:none"] { display: flex !important; }
+
+/* FIX: forzar header fixed encima del hero para evitar problemas de stacking context */
+#fh5co-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 99999 !important; /* muy por encima */
+  background: transparent !important;
+}
+/* Overlay por debajo */
+.fh5co-hero .overlay, .fh5co-parallax .overlay { z-index: 1000 !important; }
+
+/* Asegurar links blancos y legibles */
+#fh5co-header a, .fh5co-main-nav ul li a { color: #fff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.8) !important; }
+
+/* Mantener el hero sin padding-top para que la nav quede encima */
+#fh5co-wrap { padding-top: 0 !important; }
+
+/* Safety: si alguna página necesita espacio (páginas internas), se puede ajustar manualmente */
+
+/* User-request: Desktop horizontal white nav (serious style) */
+@media screen and (min-width: 769px) {
+  /* Keep header over the hero and transparent */
+  #fh5co-header {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 2000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Horizontal, centered list */
+  .fh5co-main-nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 28px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+  }
+
+  .fh5co-main-nav ul li { display: inline-block !important; }
+
+  /* Serious white style for links */
+  .fh5co-main-nav ul li a {
+    color: #ffffff !important;
+    font-family: "Work Sans", Arial, sans-serif !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 15px !important;
+    padding: 18px 12px !important;
+    display: block !important;
+    text-shadow: none !important; /* clean, serious look */
+    border-bottom: none !important;
+  }
+
+  /* Active / hover state — subtle underline for clarity */
+  .fh5co-main-nav ul li.fh5co-active a,
+  .fh5co-main-nav ul li a:hover {
+    color: #ffffff !important;
+    border-bottom: 2px solid rgba(255,255,255,0.85) !important;
+    padding-bottom: 16px !important;
+  }
+
+  /* Ensure hero overlay sits below header */
+  .fh5co-hero .overlay, .fh5co-parallax .overlay {
+    z-index: 1000 !important;
+  }
+}
+
+/* End of user-requested nav overrides */
+
+/* Top-row: horizontal links visible on every page */
+.top-row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background: transparent !important; /* quitar franja blanca */
+  display: flex;
+  align-items: center;
+  z-index: 10005 !important; /* encima del hero */
+  box-shadow: none !important;
+}
+.top-row .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+.top-row .top-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 28px;
+}
+.top-row .top-links li { display: inline-block; }
+.top-row .top-links li a {
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 6px;
+  display: inline-block;
+}
+.top-row .top-links li a:hover,
+.top-row .top-links li a:focus { color: #52d3aa; outline: none; }
+
+/* When the body has the helper class, push header and page content below the top-row */
+body.has-top-row #fh5co-header { top: 44px !important; }
+body.has-top-row #fh5co-wrap { padding-top: 44px !important; }
+
+/* Responsive: reduce gap on small screens */
+@media screen and (max-width: 480px) {
+  .top-row { height: 48px; }
+  .top-row .top-links { gap: 12px; }
+  .top-row .top-links li a { font-size: 14px; padding: 8px 6px; }
+}
+
+/* Make the top-row transparent on the homepage and match the main nav style */
+body.home .top-row {
+  background: transparent !important;
+  box-shadow: none !important;
+  height: 44px; /* keep same height */
+  z-index: 10005; /* sit above hero but below header components if needed */
+}
+
+body.home .top-row .top-links {
+  gap: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.home .top-row .top-links li a {
+  color: #ffffff !important;
+  font-family: "Work Sans", Arial, sans-serif !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 15px !important;
+  padding: 12px 8px !important;
+  text-decoration: none !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6) !important;
+}
+
+/* Hover/active state to match main nav subtle underline */
+body.home .top-row .top-links li a:hover,
+body.home .top-row .top-links li a:focus,
+body.home .top-row .top-links li.fh5co-active a {
+  color: #ffffff !important;
+  border-bottom: 2px solid rgba(255,255,255,0.85) !important;
+  padding-bottom: 10px !important;
+}
+
+/* Ensure the header remains positioned correctly when .has-top-row is present on home */
+body.home.has-top-row #fh5co-header {
+  top: 44px !important; /* header will sit below the top-row */
+}
+
+/* Aplicar estilo de la home a la top-row en todas las páginas: transparente y enlaces blancos encima del hero */
+.top-row {
+  background: transparent !important;
+  box-shadow: none !important;
+  z-index: 10005 !important; /* encima del hero pero por debajo del header si hace falta */
+}
+.top-row .top-links li a {
+  color: #ffffff !important;
+  font-family: "Work Sans", Arial, sans-serif !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-size: 15px !important;
+  padding: 12px 8px !important;
+  text-decoration: none !important;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6) !important;
+}
+.top-row .top-links li a:hover,
+.top-row .top-links li a:focus,
+.top-row .top-links li.fh5co-active a {
+  color: #ffffff !important;
+  border-bottom: 2px solid rgba(255,255,255,0.85) !important;
+  padding-bottom: 10px !important;
+}
+
+/* Móvil: asegurar contraste en pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .top-row { height: 48px; }
+  .top-row .top-links { gap: 12px; }
+  .top-row .top-links li a { font-size: 14px; padding: 8px 6px; color: #fff !important; }
+}
+
+/* Fix: allow the hero to reach the very top of the page on the homepage even when .has-top-row is present */
+body.home.has-top-row #fh5co-wrap {
+  padding-top: 0 !important; /* eliminar la franja blanca que empujaba el hero hacia abajo */
+}
+
+/* Ensure the hero starts at the very top and is not offset by the header/top-row */
+body.home.has-top-row .fh5co-hero {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  min-height: 100vh; /* asegurar que cubra la ventana */
+}
+
+/* Keep the top-row transparent and ensure its links are white so text sits over the hero */
+body.home .top-row,
+.top-row {
+  background: transparent !important;
+}
+.top-row .top-links li a {
+  color: #fff !important;
+}
+
+/* Ensure stacking order: top-row and header above the hero image, but transparent so image shows through */
+.top-row { z-index: 10050 !important; }
+#fh5co-header { z-index: 10060 !important; }
+.fh5co-hero { z-index: 10000; }
+
+/* Desktop-only: mostrar top-row y header transparentes con enlaces blancos encima del hero */
+@media screen and (min-width: 769px) {
+  /* Asegurar que en la home no haya franja blanca y que el hero llegue al tope */
+  body.home.has-top-row #fh5co-wrap { padding-top: 0 !important; }
+  body.home #fh5co-header, body.home .top-row { background: transparent !important; box-shadow: none !important; }
+
+  /* Enlaces en blanco y sin fondo — solo desktop */
+  body.home .top-row .top-links li a,
+  body.home .fh5co-main-nav ul li a,
+  body.home #fh5co-header a { color: #fff !important; }
+
+  /* Quitar cualquier borde o franja que muestre blanco detrás */
+  body.home .top-row, body.home #fh5co-header { border: none !important; }
+
+  /* Forzar stacking order para que los enlaces estén encima del overlay y la imagen se vea detrás */
+  body.home .top-row { position: absolute; top: 0; left: 0; right: 0; z-index: 10050 !important; }
+  body.home #fh5co-header { position: absolute; top: 0; left: 0; right: 0; z-index: 10060 !important; }
+
+  /* Alinear verticalmente y quitar altura fija que pudiera crear franja */
+  body.home .top-row { height: auto; padding: 0 12px; }
+  body.home .top-row .top-links li a { padding: 12px 10px !important; }
+
+  /* Asegurar que la caja del hero no se desplace hacia abajo */
+  body.home .fh5co-hero { margin-top: 0 !important; padding-top: 0 !important; }
+}
+
+/* Apply home-style overlay to any page that uses the helper class .hero-over (desktop only) */
+@media screen and (min-width: 769px) {
+  body.hero-over #fh5co-header,
+  body.hero-over .top-row {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 10060 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* White links on header and top-row to sit over the hero */
+  body.hero-over #fh5co-header a,
+  body.hero-over .fh5co-main-nav ul li a,
+  body.hero-over .top-row .top-links li a {
+    color: #fff !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6) !important;
+    border-bottom: none !important;
+  }
+
+  /* Remove any padding that produces a white band above the hero */
+  body.hero-over #fh5co-wrap { padding-top: 0 !important; }
+
+  /* Ensure hero content (h1/p) stays above overlay and is white */
+  body.hero-over .fh5co-hero .fh5co-intro h1,
+  body.hero-over .fh5co-hero .fh5co-intro p {
+    color: #fff !important;
+    z-index: 2000 !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6) !important;
+  }
+
+  /* Make sure the hero overlay sits below header/top-row */
+  body.hero-over .fh5co-hero .overlay { z-index: 1500 !important; }
+
+  /* main nav (uses <span>) */
+  body.hero-over .fh5co-main-nav ul li a span {
+    border-bottom: 2px solid transparent !important;
+  }
+  body.hero-over .fh5co-main-nav ul li a:hover span,
+  body.hero-over .fh5co-main-nav ul li.fh5co-active a span {
+    border-bottom-color: #fff !important;
+  }
+
+  /* top-row links (no <span>) — animate an underline with ::after */
+  body.hero-over .top-row .top-links li a {
+    position: relative;
+    padding-bottom: 8px; /* espacio para la línea */
+  }
+  body.hero-over .top-row .top-links li a::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 4px;
+    height: 2px;
+    background: transparent;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 180ms ease, background-color 180ms ease;
+  }
+  body.hero-over .top-row .top-links li a:hover::after {
+    background: #fff !important;
+    transform: scaleX(1);
+  }
+}
+
+/* User request: en móvil ocultar la top-row pero permitir que el menú desplegable muestre enlaces navegables */
+@media screen and (max-width: 768px) {
+  /* Ocultar solo la franja superior (top-row) en móvil para que la imagen llegue arriba */
+  .top-row {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Ocultar el menú de escritorio (lista principal) en móvil — se usa el collapse para móvil */
+  .fh5co-main-nav ul { display: none !important; }
+
+  /* Mantener el collapse móvil controlado por JS: oculto por defecto, visible cuando tenga .show */
+  .collapse.navbar-collapse { display: none; }
+  .collapse.navbar-collapse.show { display: block; }
+
+  /* Asegurar que los enlaces dentro del collapse sean visibles y navegables cuando se muestre el collapse */
+  .collapse.navbar-collapse ul li a {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 10px 14px !important;
+    color: #fff !important;
+  }
+
+  /* Cabecera transparente y fija para que el hero llegue al tope */
+  #fh5co-header {
+    background: transparent !important;
+    box-shadow: none !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99999 !important;
+  }
+
+  /* Forzar que el hero ocupe la pantalla completa y llegue al tope */
+  .fh5co-hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    min-height: 100vh !important;
+    background-position: center top !important;
+    background-size: cover !important;
+  }
+
+  /* Mostrar el toggler */
+  .navbar-toggler { display: block !important; }
+}
+
+/* Desktop: asegurar que los enlaces se muestren normalmente */
+@media screen and (min-width: 769px) {
+  .top-row { display: flex !important; }
+  .top-row .top-links li a,
+  .fh5co-main-nav ul li a,
+  #fh5co-header nav li a {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    margin: initial !important;
+    padding: 12px 14px !important;
+  }
+}
+
+/* ENSURE JS CONTROLS THE COLLAPSE MENU (override remaining FORCE rules) */
+#navbarNav.collapse.navbar-collapse { display: none !important; opacity: 0 !important; max-height: 0 !important; overflow: hidden !important; }
+#navbarNav.collapse.navbar-collapse.show { display: block !important; opacity: 1 !important; max-height: 800px !important; }
+
+#navbarNav.collapse.navbar-collapse ul { display: flex !important; flex-direction: column !important; gap: 8px !important; padding: 8px 12px !important; }
+#navbarNav.collapse.navbar-collapse ul li { display: block !important; }
+#navbarNav.collapse.navbar-collapse ul li a { display: block !important; }
+
+@media screen and (min-width: 769px) {
+  /* En escritorio, mostrar nav horizontal y dejar colapso siempre visible */
+  #navbarNav.collapse.navbar-collapse { display: block !important; opacity: 1 !important; max-height: none !important; position: static !important; background: transparent !important; }
+  #navbarNav.collapse.navbar-collapse ul { flex-direction: row !important; gap: 20px !important; }
+  #navbarNav.collapse.navbar-collapse ul li { display: inline-block !important; }
+}
+
+/* START: Simplified header/navigation restore */
+/* Default header: fixed white bar for internal pages */
+#fh5co-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+#fh5co-header .container { display:flex; justify-content:center; align-items:center; padding:8px 15px; }
+.fh5co-main-nav ul { display:flex; gap:16px; padding:0; margin:0; list-style:none; }
+.fh5co-main-nav ul li { display:inline-block; }
+.fh5co-main-nav ul li a { color: #222; padding: 12px 10px; display:block; }
+
+/* Homepage: header transparent above hero */
+body.home #fh5co-header {
+  position: absolute;
+  background: transparent;
+  box-shadow: none;
+}
+body.home .fh5co-main-nav ul li a { color: #fff; }
+
+/* Mobile: keep navigation simple (no collapse required) */
+@media screen and (max-width: 768px) {
+  .navbar-toggler { display: none !important; }
+  .fh5co-main-nav ul { flex-direction: column; gap:8px; }
+  .fh5co-main-nav ul li a { padding: 10px; }
+  #fh5co-header { position: relative; }
+}
+/* END: Simplified header/navigation restore */
+
+/* START: Mobile cycle button - visible on all pages, only on small screens */
+.mobile-cycle {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  display: none; /* hidden by default, enabled in media query */
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  z-index: 2000;
+}
+.mobile-cycle:focus { outline: 2px solid rgba(255,255,255,0.9); }
+
+@media screen and (max-width: 768px) {
+  .mobile-cycle { display: flex; }
+}
+/* END: Mobile cycle button */
+
+/* Mobile: serious navigation button + panel (replaces floating cycle button) */
+@media screen and (max-width: 768px) {
+  /* Hide old floating cycle button */
+  .mobile-cycle { display: none !important; }
+
+  /* Serious button: centered, rectangular, high-contrast */
+  .mobile-nav-btn {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 14px;
+    z-index: 2200;
+    background: #1f2937; /* dark slate */
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.28);
+    border: 1px solid rgba(255,255,255,0.06);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  /* Panel with links that slides up above the button */
+  .mobile-nav-panel {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 72px;
+    z-index: 2200;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.25);
+    display: none;
+    flex-direction: column;
+    padding: 6px 6px;
+    overflow: hidden;
+  }
+  .mobile-nav-panel.show { display: flex; }
+
+  .mobile-nav-panel a {
+    color: #111827;
+    padding: 14px 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    background: transparent;
+  }
+  .mobile-nav-panel a:last-child { border-bottom: none; }
+  .mobile-nav-panel a:hover { background: #f8fafc; }
+
+  /* Small close affordance for the panel */
+  .mobile-nav-panel .mobile-nav-close {
+    align-self: flex-end;
+    font-size: 13px;
+    color: #6b7280;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+}
+
+/* Minimal panel móvil solo con enlace negro centrado */
+.mobile-nav-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: none;
+  display: none;
+  flex-direction: column;
+  min-width: 220px;
+  max-width: 90vw;
+  padding: 24px 0 8px 0;
+  align-items: center;
+  animation: fadeInPanel 0.22s;
+}
+.mobile-nav-panel.show {
+  display: flex;
+}
+.mobile-nav-panel a {
+  color: #111 !important;
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
+  background: none !important;
+  border: none !important;
+  margin: 0;
+  transition: color 0.18s;
+}
+.mobile-nav-panel a:hover {
+  color: #222 !important;
+  background: none !important;
+}
+.mobile-nav-panel .mobile-nav-close {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 1.1rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0;
+}
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+@media screen and (min-width: 769px) {
+  .mobile-nav-panel { display: none !important; }
+}
+
+/* Minimal panel móvil */
+.mobile-nav-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: none;
+  display: none;
+  flex-direction: column;
+  min-width: 220px;
+  max-width: 90vw;
+  padding: 24px 0 8px 0;
+  align-items: center;
+  animation: fadeInPanel 0.22s;
+}
+.mobile-nav-panel.show {
+  display: flex;
+}
+.mobile-nav-panel a {
+  color: #222;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 16px 0;
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  margin: 0;
+  transition: background 0.18s;
+}
+.mobile-nav-panel a:hover {
+  background: #f5f5f5;
+}
+.mobile-nav-panel .mobile-nav-close {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  font-size: 1.1rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 0;
+}
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+@media screen and (min-width: 769px) {
+  .mobile-nav-panel { display: none !important; }
+}
+
+/* Minimal top-right navigation button (used on all pages) */
+.minimal-nav-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  z-index: 2500;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 160ms ease, transform 140ms ease;
+  backdrop-filter: blur(4px);
+}
+.minimal-nav-btn:focus { outline: 2px solid rgba(82,211,170,0.25); }
+.minimal-nav-btn:hover { background: rgba(255,255,255,0.12); transform: translateY(-1px); }
+
+/* Ensure minimal button contrasts on light headers (internal pages) */
+@media screen and (min-width: 769px) {
+  /* if header has white background, switch to dark icon */
+  body:not(.home) .minimal-nav-btn { background: rgba(0,0,0,0.04); color: #222; border-color: rgba(0,0,0,0.06); }
+}
+
+/* On small screens, keep the minimal button visible and slightly larger */
+@media screen and (max-width: 768px) {
+  .minimal-nav-btn { width: 44px; height: 44px; top: 10px; right: 12px; font-size: 20px; }
+  /* hide floating cycle button if present */
+  .mobile-cycle { display: none !important; }
+}
+
+/* Small adjustment: keep mobile-nav-panel above footer content on short pages */
+.mobile-nav-panel { bottom: 72px; }
+
+/* CENTRALIZED: header / hero / top-row rules previously inline in each page */
+/* Ensure header sits above hero and can be transparent on home/hero-over pages */
+#fh5co-header { position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 999999 !important; background: transparent !important; box-shadow: none !important; }
+.fh5co-hero .overlay, .fh5co-parallax .overlay { z-index: 1000 !important; }
+html, body { height: 100%; margin: 0; padding: 0; }
+.top-row { position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 999998 !important; background: transparent !important; }
+.fh5co-hero { min-height: 100vh !important; background-size: cover !important; background-position: center top !important; background-repeat: no-repeat !important; margin: 0 !important; padding: 0 !important; }
+.fh5co-hero > .overlay { background: rgba(0,0,0,0.25) !important; }
+.fh5co-hero .fh5co-intro, .fh5co-hero h1, .fh5co-hero p { color: #fff !important; z-index: 2000 !important; text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
+
+/* User tweak: lift navigation on homepage so links sit closer to top */
+body.home.has-top-row #fh5co-header,
+body.home #fh5co-header { top: 6px !important; }
+body.home.has-top-row #fh5co-wrap { padding-top: 6px !important; }
+body.home .top-row { top: 0 !important; height: 36px !important; padding-top: 4px !important; }
+body.home .fh5co-main-nav ul li a { padding: 8px 10px !important; font-size: 14px !important; }
+body.home .top-row .top-links li a { padding: 6px 8px !important; font-size: 13px !important; }
+body.home .fh5co-hero { margin-top: 0 !important; padding-top: 0 !important; }
+
+/* Provide a helper class for pages that want hero-over behaviour */
+body.hero-over #fh5co-header, body.hero-over .top-row { position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; z-index: 10060 !important; background: transparent !important; box-shadow: none !important; }
+
+/* Ensure buttons and panels keep expected stacking */
+.minimal-nav-btn { z-index: 2500; }
+.mobile-nav-panel { z-index: 2200; bottom: 72px; }
+
+/* Mobile: llevar las imágenes y heroes hasta arriba del todo */
+@media screen and (max-width: 768px) {
+  /* Evitar que el wrapper o header añadan padding que empuje las imágenes */
+  #fh5co-wrap { padding-top: 0 !important; }
+  #fh5co-header { position: absolute !important; top: 0 !important; left: 0 !important; right: 0 !important; }
+  .top-row { top: 0 !important; }
+
+  /* Héroes y parallax: sin margen ni padding superior, fondo alineado arriba */
+  .fh5co-hero, .fh5co-parallax {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    min-height: 0 !important; /* permitir que el contenido determine la altura en móvil */
+    background-position: center top !important;
+    background-size: cover !important;
+  }
+  .fh5co-hero .overlay, .fh5co-parallax .overlay {
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+
+  /* Imágenes de contenido: eliminar margen superior y asegurar que ocupen el espacio correctamente */
+  img, .fh5co-section img, .fh5co-staff img, .fh5co-portfolio img, .gallery img {
+    margin-top: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* Si hay containers que empujan, aseguramos que no añadan padding superior */
+  .container, .container-map, .map-container { padding-top: 0 !important; }
+}
+
+/* FORZAR: que las imágenes y heroes lleguen hasta arriba del todo (desktop y móvil) */
+html, body, #fh5co-wrap { margin: 0; padding: 0 !important; background: transparent !important; }
+
+/* Mantener el header como overlay para que no empuje el contenido hacia abajo */
+#fh5co-header, .top-row { top: 0 !important; left: 0 !important; right: 0 !important; }
+
+/* Si hay la clase helper .has-top-row, evitar desplazar header/contendido hacia abajo */
+body.has-top-row #fh5co-header { top: 0 !important; }
+body.has-top-row #fh5co-wrap { padding-top: 0 !important; }
+
+/* Eliminar cualquier borde o sombra que pueda crear la franja blanca en la parte superior */
+#fh5co-header, .top-row { background: transparent !important; box-shadow: none !important; border: none !important; }
+
+/* Asegurar que el hero comience exactamente en 0 */
+.fh5co-hero { margin-top: 0 !important; padding-top: 0 !important; }
+
+/* Heroes/parallax: sin márgenes ni padding superiores, fondo alineado arriba */
+.fh5co-hero, .fh5co-parallax {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-position: center top !important;
+  background-size: cover !important;
+}
+
+/* Asegurar overlay ocupa toda la sección y queda por debajo del header */
+.fh5co-hero > .overlay, .fh5co-parallax > .overlay { top: 0 !important; bottom: 0 !important; z-index: 1000 !important; }
+
+/* Imágenes de contenido: eliminar cualquier margen/padding superior y recortarlas desde arriba */
+img, .fh5co-section img, .fh5co-staff img, .fh5co-portfolio img, .gallery img {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover !important;
+  object-position: top center !important; /* recortar por la parte superior */
+}
+
+/* Cuando una imagen está como fondo (hero), forzamos que la posición focal sea arriba */
+.fh5co-hero, .fh5co-parallax { background-position: center top !important; }
+
+/* En móvil asegurar que el hero cubre la ventana y comienza en el tope */
+@media screen and (max-width: 768px) {
+  .fh5co-hero, .fh5co-parallax { min-height: 100vh !important; }
+}
+
+/* Header hide-on-scroll helper */
+#fh5co-header.header-hidden {
+  transform: translateY(-110%);
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1);
+}
+#fh5co-header { transition: transform 220ms cubic-bezier(.2,.9,.2,1); }
+
+/* Clase utilitaria para forzar recorte desde arriba en imágenes concretas */
+img.align-top { object-fit: cover !important; object-position: top center !important; }
+
+/* Reglas por página: permiten ajustar min-height de hero y recorte de imágenes por página */
+body.page-index .fh5co-hero { min-height: 85vh !important; }
+body.page-index img.align-top { height: auto; }
+
+body.page-services .fh5co-hero { min-height: 100vh !important; }
+body.page-services img.align-top { height: auto; }
+
+body.page-about .fh5co-hero { min-height: 75vh !important; }
+body.page-about img.align-top { height: auto; }
+
+body.page-contact .fh5co-hero { min-height: 70vh !important; }
+body.page-contact img.align-top { height: auto; }
+
+/* En móvil prefieren 100vh para todos los heroes (ya forzado pero reafirmamos) */
+@media screen and (max-width: 768px) {
+  body.page-index .fh5co-hero,
+  body.page-services .fh5co-hero,
+  body.page-about .fh5co-hero,
+  body.page-contact .fh5co-hero { min-height: 100vh !important; }
+}
+
+/* Ajuste: elevar ligeramente la imagen del hero en la página de inicio */
+body.page-index .fh5co-hero {
+  /* subir el foco del fondo unos pocos porcentajes (más positivo = baja, negativo = sube) */
+  background-position: center -8% !important;
+}
+
+/* Pequeño ajuste visual del contenido del hero para compensar el movimiento de la imagen */
+body.page-index .fh5co-hero .fh5co-intro {
+  transform: translateY(-6px);
+}
+
+@media screen and (max-width: 768px) {
+  /* En móvil subir un poco menos para evitar recortes extra */
+  body.page-index .fh5co-hero { background-position: center -4% !important; }
+  body.page-index .fh5co-hero .fh5co-intro { transform: translateY(-3px); }
+}
+
+/* --- Botón hamburguesa minimalista global --- */
+.minimal-nav-btn {
+  position: fixed;
+  top: 16px;
+  right: 18px;
+  z-index: 2500;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(30,30,30,0.85);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: background 160ms, transform 140ms;
+}
+.minimal-nav-btn:focus {
+  outline: 2px solid #52d3aa;
+}
+.minimal-nav-btn:hover {
+  background: rgba(30,30,30,1);
+  transform: scale(1.04);
+}
+.minimal-nav-btn span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: relative;
+}
+.minimal-nav-btn span span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+.minimal-nav-btn span span:nth-child(1) { top: 6px; }
+.minimal-nav-btn span span:nth-child(2) { top: 12px; }
+.minimal-nav-btn span span:nth-child(3) { top: 18px; }
+
+@media screen and (max-width: 768px) {
+  .minimal-nav-btn {
+    display: flex !important;
+    position: fixed !important;
+    top: 16px !important;
+    right: 18px !important;
+    z-index: 2500 !important;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    background: #222 !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 769px) {
+  .minimal-nav-btn {
+    display: none !important;
+  }
+}
+
+/* Forzar letras negras en los enlaces del panel móvil */
+.mobile-nav-panel a {
+  color: #222 !important;
+}
+
+/* Mostrar los enlaces del menú móvil en vertical en formato móvil */
+@media (max-width: 768px) {
+  .mobile-nav-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 32px 0 0 0;
+  }
+  .mobile-nav-panel a {
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    font-size: 1.3em;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    background: transparent;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  }
+  .mobile-nav-panel a:last-child {
+    border-bottom: none;
+  }
+  .mobile-nav-close {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-panel a {
+    font-weight: 400;
+    color: #111 !important;
+    text-shadow: none !important;
+    font-family: 'Work Sans', Arial, sans-serif;
+  }
+  .mobile-nav-close {
+    color: #111 !important;
+    font-weight: 400;
+    text-shadow: none !important;
+    font-family: 'Work Sans', Arial, sans-serif;
+  }
+}
+
+/* Menú móvil unificado para todas las páginas */
+@media (max-width: 768px) {
+  .mobile-nav-panel {
+    display: none;
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 240px;
+    max-width: 90vw;
+    padding: 24px 0 8px 0;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    z-index: 3000;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInPanel 0.22s;
+  }
+  .mobile-nav-panel.show {
+    display: flex !important;
+  }
+  .mobile-nav-panel a {
+    color: #222 !important;
+    font-size: 1.15rem;
+    font-weight: 400;
+    font-family: 'Work Sans', Arial, sans-serif;
+    text-shadow: none !important;
+    text-align: center;
+    text-decoration: none;
+    padding: 18px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background: none;
+    margin: 0;
+    transition: background 0.18s;
+    letter-spacing: 0.5px;
+  }
+  .mobile-nav-panel a:last-child {
+    border-bottom: none;
+  }
+  .mobile-nav-panel a:hover {
+    background: #f5f5f5;
+  }
+  .mobile-nav-close {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1.1em;
+    color: #222 !important;
+    font-weight: 400;
+    text-shadow: none !important;
+    font-family: 'Work Sans', Arial, sans-serif;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-top: 8px;
+  }
+}
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* FIX: force nav underline (global) - placed at end to override conflicting rules */
+#fh5co-header .fh5co-main-nav ul li a,
+.fh5co-main-nav ul li a {
+  border-bottom: none !important; /* avoid double underline */
+}
+#fh5co-header .fh5co-main-nav ul li a span,
+.fh5co-main-nav ul li a span {
+  display: inline-block !important;
+  padding-bottom: 3px !important;
+  border-bottom: 2px solid transparent !important; /* base state */
+  transition: border-color 0.18s ease, padding-bottom 0.12s ease !important;
+}
+#fh5co-header .fh5co-main-nav ul li a:hover span,
+#fh5co-header .fh5co-main-nav ul li.fh5co-active a span,
+.fh5co-main-nav ul li a:hover span,
+.fh5co-main-nav ul li.fh5co-active a span {
+  border-bottom-color: #fff !important; /* visible underline */
+}
+/* Mobile panel underline (for links without <span>) */
+.mobile-nav-panel a {
+  position: relative !important;
+  padding-bottom: 8px !important; /* retain tappable area */
+}
+.mobile-nav-panel a::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 8% !important;
+  right: 8% !important;
+  bottom: 4px !important;
+  height: 2px !important;
+  background: #fff !important;
+  transform: scaleX(0) !important;
+  transform-origin: left center !important;
+  transition: transform 0.18s ease, background-color 0.18s ease !important;
+}
+.mobile-nav-panel a:hover::after,
+.mobile-nav-panel a:focus::after,
+.mobile-nav-panel a:active::after {
+  transform: scaleX(1) !important;
+}
